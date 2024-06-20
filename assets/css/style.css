@@ -1,16 +1,16 @@
 @font-face {
   font-family: "NT Somic";
-  src: url(../Fonts/Webfonts/NTSomic-Regular.woff2);
+  src: url(../..//Webfonts/NTSomic-Regular.woff2);
 }
 
 @font-face {
   font-family: "Open Runde";
-  src: url(../Fonts/openRunde/OpenRunde-Regular.woff2);
+  src: url(../../Fonts/openRunde/OpenRunde-Regular.woff2);
 }
 
 @font-face {
   font-family: "Inter Display";
-  src: url(../Fonts/interDisplay/ttf/InterDisplay-Regular.ttf);
+  src: url(../../Fonts/interDisplay/ttf/InterDisplay-Regular.ttf);
 }
 
 :root {
@@ -233,7 +233,7 @@ a {
 
 .section-2 select {
   appearance: none;
-  background-image: url(./img/dropdown.svg);
+  background-image: url(../img/dropdown.svg);
   background-repeat: no-repeat;
   background-position: right calc(0.75rem + 10px) center;
   cursor: pointer;
@@ -244,7 +244,7 @@ a {
 .section-2 select:hover {
   background-color: #000;
   color: #fff;
-  background-image: url(./img/dropdown_white.svg);
+  background-image: url(../img/dropdown_white.svg);
 }
 
 .section-2__button {
@@ -537,6 +537,7 @@ a {
   width: 100%;
   height: 100%;
   /* overflow: auto; */
+  font-family: var(--font-2);
   display: none;
   justify-content: center;
   align-items: center;
@@ -981,7 +982,7 @@ a {
 
 .section-9 select {
   appearance: none;
-  background-image: url(./img/dropdown.svg);
+  background-image: url(../img/dropdown.svg);
   background-repeat: no-repeat;
   background-position: right calc(0.75rem + 10px) center;
   cursor: pointer;
@@ -991,7 +992,7 @@ a {
 .section-9 select:hover {
   background-color: #000;
   color: #fff;
-  background-image: url(./img/dropdown_white.svg);
+  background-image: url(../img/dropdown_white.svg);
 }
 
 .section-9__right {
@@ -1077,7 +1078,7 @@ a {
 
 .footer__content {
   height: 671px;
-  background-image: url(./img/footer.png);
+  background-image: url(../img/footer.png);
   position: relative;
 }
 
