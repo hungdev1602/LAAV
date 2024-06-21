@@ -273,6 +273,16 @@ const contactButton = () => {
   });
 };
 
+// ============================================= Sự kiện khi scroll đến section 9 cho chạy animation =================================
+window.addEventListener("scroll", function () {
+  var targetElement = document.querySelector(".section-9__wrap");
+  var rect = targetElement.getBoundingClientRect();
+
+  // Kiểm tra xem phần tử có nằm trong viewport chưa
+  if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+    targetElement.style.animation = "appear 1.5s linear forwards";
+  }
+});
 // GỌi các hàm mặc định =============================================
 
 popupButtons();
