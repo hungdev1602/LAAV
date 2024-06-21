@@ -178,8 +178,14 @@ const contactButton = () => {
                         <input class="contact-popup__form--child form--inp" type="tel" placeholder="Телефон">
                         <select class="contact-popup__form--child" name="services" id="">
                             <option value="">Услуга</option>
-                            <option value="val1">val1</option>
-                            <option value="val2">val2</option>
+                            <option value="val1">Полноценное создание коротких роликов</option>
+                            <option value="val2">Создание рекламных роликов</option>
+                            <option value="val3">Youtube шоу, подкасты, интервью</option>
+                            <option value="val4">Креативная съемка</option>
+                            <option value="val5">Обучающие видеоролики</option>
+                            <option value="val6">Создание снипетов и клипов</option>
+                            <option value="val7">Единичная услуга</option>
+                            <option value="val8">Другое</option>
                         </select>
                     </form>
                 </div>
@@ -225,8 +231,14 @@ const contactButton = () => {
                         <input class="contact-popup__form--child form--inp" type="tel" placeholder="Телефон">
                         <select class="contact-popup__form--child" name="services" id="">
                             <option value="">Услуга</option>
-                            <option value="val1">val1</option>
-                            <option value="val2">val2</option>
+                            <option value="val1">Полноценное создание коротких роликов</option>
+                            <option value="val2">Создание рекламных роликов</option>
+                            <option value="val3">Youtube шоу, подкасты, интервью</option>
+                            <option value="val4">Креативная съемка</option>
+                            <option value="val5">Обучающие видеоролики</option>
+                            <option value="val6">Создание снипетов и клипов</option>
+                            <option value="val7">Единичная услуга</option>
+                            <option value="val8">Другое</option>
                         </select>
                     </form>
                 </div>
@@ -283,8 +295,21 @@ window.addEventListener("scroll", function () {
     targetElement.style.animation = "appear 1.5s linear forwards";
   }
 });
+
+// ============================================= Sự kiện xem thêm và ẩn bớt ở mục кейсы =================================
+const watchMore = () => {
+  const buttonWatchMore = document.querySelector(".button-more");
+  buttonWatchMore.addEventListener("click", () => {
+    const items = document.querySelectorAll(".search");
+    items.forEach((item) => {
+      item.classList.toggle("non-active");
+    });
+  });
+};
+
 // GỌi các hàm mặc định =============================================
 
 popupButtons();
 contactButton();
 inputError();
+watchMore();
