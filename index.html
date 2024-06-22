@@ -38,13 +38,13 @@
             <div class="section-1__content">
                 <div class="section-1__top">Продвигаем вас в</div>
                 <div class="section-1__mid">
-                    <img src="https://user-images.githubusercontent.com/14011726/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48.gif"
-                        class="section-1__video" id="video-1"></img>
+                    <video src="./assets/img/section1.mov" autoplay loop muted class="section-1__video"
+                        id="video-1"></video>
                     <span>Цифровом мире</span>
                 </div>
                 <div class="section-1__bottom">
-                    <img src="https://user-images.githubusercontent.com/14011726/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48.gif"
-                        class="section-1__video" id="video-2"></img>
+                    <video src="./assets/img/section1.mov" autoplay loop muted class="section-1__video"
+                        id="video-2"></video>
                     <span>Видеоконтента</span>
                 </div>
             </div>
@@ -56,10 +56,9 @@
     <div class="section-2">
         <div class="container">
             <div class="section-2__content">
-                <img src="https://www.loomly.com/hs-fs/hubfs/Imported_Blog_Media/earth-Apr-03-2024-12-19-31-1897-AM.gif?width=540&height=540&name=earth-Apr-03-2024-12-19-31-1897-AM.gif"
-                    class="section-2__video">
-                <!-- <source src="./assets/videos/cs2_highlights.mp4"> -->
-                </img>
+                <video class="section-2__video" autoplay loop muted>
+                    <source src="./assets/videos/main.mp4">
+                </video>
                 <div class="section-2__video--top">Создаем цепляющий контент с любовью к аудитории и клиенту</div>
                 <div class="section-2__video--bottom">Введите свои контактные данные и мы свяжемся с вами</div>
                 <div class="section-2__contact">
@@ -129,53 +128,51 @@
                 <!-- top -->
                 <div class="section-4__top">
                     <div class="section-4__brand brand-1">
-                        <a href="https://www.youtube.com/watch?v=abPmZCZZrFA" target="_blank"
-                            class="button button-width">
+                        <button class="button button-width">
                             Съемка моделей для бренда
                             <img src="./assets/img/arrow_white.svg" alt="">
-                        </a>
+                        </button>
                     </div>
                 </div>
                 <!-- top1 -->
                 <div class="section-4__top1">
                     <div class="section-4__creative brand-2">
-                        <a href="https://www.youtube.com/watch?v=abPmZCZZrFA" target="_blank" class="button">
+                        <button class="button">
                             Творческая съемка
                             <img src="./assets/img/arrow_white.svg" alt="">
-                        </a>
+                        </button>
                     </div>
 
                     <div class="section-4__expert brand-3">
-                        <a href="https://www.youtube.com/watch?v=abPmZCZZrFA" target="_blank" class="button">
+                        <button class="button">
                             Съемка эксперта
                             <img src="./assets/img/arrow_white.svg" alt="">
-                        </a>
+                        </button>
                     </div>
                 </div>
                 <!-- top 2 -->
-                <div class="section-4__top non-active search brand-4" style="margin-top: 20px;">
-                    <div class="section-4__brand">
-                        <a href="https://www.youtube.com/watch?v=abPmZCZZrFA" target="_blank"
-                            class="button button-width">
+                <div class="section-4__top non-active search" style="margin-top: 20px;">
+                    <div class="section-4__brand brand-4">
+                        <button class="button button-width">
                             Съемка психолога
                             <img src="./assets/img/arrow_white.svg" alt="">
-                        </a>
+                        </button>
                     </div>
                 </div>
                 <!-- top 3 -->
                 <div class="section-4__top1 non-active search">
                     <div class="section-4__creative brand-5">
-                        <a href="https://www.youtube.com/watch?v=abPmZCZZrFA" target="_blank" class="button">
+                        <button class="button">
                             Творческая съемка
                             <img src="./assets/img/arrow_white.svg" alt="">
-                        </a>
+                        </button>
                     </div>
 
                     <div class="section-4__expert brand-6">
-                        <a href="https://www.youtube.com/watch?v=abPmZCZZrFA" target="_blank" class="button">
+                        <button class="button">
                             Студия загара
                             <img src="./assets/img/arrow_white.svg" alt="">
-                        </a>
+                        </button>
                     </div>
                 </div>
 
@@ -184,6 +181,16 @@
         </div>
     </div>
     <!-- End Section 4 -->
+
+    <!-- Embed video iframe from vimeo -->
+    <div class="embed-video">
+        <div class="embed-video__label"></div>
+        <div class="embed-video__box">
+            <iframe src="https://player.vimeo.com/video/449787858?h=489706c111&title=0&byline=0&portrait=0" width="640"
+                height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    <!-- End Embed video iframe from vimeo -->
 
     <!-- Section 5 -->
     <div class="section-5">
@@ -475,7 +482,7 @@
                 <div class="footer__contact">
                     <h4>Контакты</h4>
                     <p class="footer__contact-gmail">LAAV@gmail.com</p>
-                    <a href="https://www.youtube.com/" class="footer__contact-policy">Политика конфедециальности</a>
+                    <a href="./personal-data-policy.html" class="footer__contact-policy">Политика конфедециальности</a>
                 </div>
 
                 <!-- 2 -->

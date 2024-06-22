@@ -74,8 +74,8 @@ const popupButtons = () => {
         <div class="section-5__popup-box">
             <img class="section-5__popup-img" src="./assets/img/img_test.jpg" alt="">
             <div class="section-5__popup-title">Создание рекламных роликов</div>
-            <div class="section-5__popup-desc">Один из наиболее эффективных способов продвижения вашего бизнеса - это создание качественного промо-видео.
-                — мы берем на себя все этапы производства: от сбора команды и подготовки материалов до контроля за всем процессом 
+            <div class="section-5__popup-desc">Один из наиболее эффективных способов продвижения вашего бизнеса - это создание качественного промо-видео.<br><br>
+                — мы берем на себя все этапы производства: от сбора команды и подготовки материалов до контроля за всем процессом<br><br>
                 — вы получаете приток клиентов и повышение узнаваемости вашего бренда</div>
             <div class="section-5__popup-button contact-button">Рассказать о проекте</div>
             <div class="section-5__popup-close">&times;</div>
@@ -87,7 +87,7 @@ const popupButtons = () => {
         <div class="section-5__popup-box">
             <img class="section-5__popup-img" src="./assets/img/img_test.jpg" alt="">
             <div class="section-5__popup-title">Youtube шоу, подкасты, интервью</div>
-            <div class="section-5__popup-desc">Для прокачки личного бренды и охвата широкой аудитории предлагаем полноценное курирование данной услуги: мы подготовим креативную идею, сценарий, локации, образы, а также организуем весь продакшн от начала до конца. 
+            <div class="section-5__popup-desc">Для прокачки личного бренды и охвата широкой аудитории предлагаем полноценное курирование данной услуги: мы подготовим креативную идею, сценарий, локации, образы, а также организуем весь продакшн от начала до конца.<br><br>
                 С вас — присутствие в кадре!</div>
             <div class="section-5__popup-button contact-button">Рассказать о проекте</div>
             <div class="section-5__popup-close">&times;</div>
@@ -110,7 +110,7 @@ const popupButtons = () => {
         <div class="section-5__popup-box">
             <img class="section-5__popup-img" src="./assets/img/img_test.jpg" alt="">
             <div class="section-5__popup-title">Создание сниппетов и клипов</div>
-            <div class="section-5__popup-desc">Професисональная команда занимается видео предпродакшеном и продакшеном клипов и сниппетов, весь процесс на нас от “камера мотор” до “снято”.
+            <div class="section-5__popup-desc">Професисональная команда занимается видео предпродакшеном и продакшеном клипов и сниппетов, весь процесс на нас от “камера мотор” до “снято”.<br><br>
                 Реализуем все ваши задумки!</div>
             <div class="section-5__popup-button contact-button">Рассказать о проекте</div>
             <div class="section-5__popup-close">&times;</div>
@@ -122,11 +122,11 @@ const popupButtons = () => {
         <div class="section-5__popup-box">
             <img class="section-5__popup-img" src="./assets/img/img_test.jpg" alt="">
             <div class="section-5__popup-title">Единичная услуга</div>
-            <div class="section-5__popup-desc">Проводим съемку ваших мероприятий: мастер-классы, выступления и др.
-                Монтаж
-                Создаем полноценное видео из вашего готового материала.
-                Написание сценариев
-                — создание идеи под вашу цель от видео
+            <div class="section-5__popup-desc">Проводим съемку ваших мероприятий: мастер-классы, выступления и др.<br><br>
+                Монтаж<br><br>
+                Создаем полноценное видео из вашего готового материала.<br><br>
+                Написание сценариев<br><br>
+                — создание идеи под вашу цель от видео<br><br>
                 — создание сценариев</div>
             <div class="section-5__popup-button contact-button">Рассказать о проекте</div>
             <div class="section-5__popup-close">&times;</div>
@@ -307,9 +307,30 @@ const watchMore = () => {
   });
 };
 
+// ============================================= Sự kiện khi ấn vào nút xem sản phẩm của Кейсы =================================
+
+const caseButton = () => {
+  const buttons = document.querySelectorAll(".button");
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const embedVideo = document.querySelector(".embed-video");
+      embedVideo.style.display = "block";
+      setTimeout(() => {
+        embedVideo.classList.toggle("active");
+      }, 100);
+      const embedLabel = document.querySelector(".embed-video__label");
+      embedLabel.addEventListener("click", () => {
+        embedVideo.classList.remove("active");
+        embedVideo.style.display = "none";
+      });
+    });
+  });
+};
+
 // GỌi các hàm mặc định =============================================
 
 popupButtons();
 contactButton();
 inputError();
 watchMore();
+caseButton();
