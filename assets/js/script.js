@@ -303,6 +303,9 @@ const watchMore = () => {
     const items = document.querySelectorAll(".search");
     items.forEach((item) => {
       item.classList.toggle("non-active");
+      setTimeout(() => {
+        item.classList.toggle("active");
+      }, 100);
     });
   });
 };
@@ -311,9 +314,80 @@ const watchMore = () => {
 
 const caseButton = () => {
   const buttons = document.querySelectorAll(".button");
-  buttons.forEach((button) => {
+  buttons.forEach((button, index) => {
     button.addEventListener("click", () => {
+      let htmls = "";
+      if (index === 0) {
+        htmls = `
+        <div class="embed-video__label"></div>
+
+        <div class="embed-video__box">
+            <iframe src="https://player.vimeo.com/video/965536708?h=6e1d9eaaff&loop=1"
+                style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+            <script src="https://player.vimeo.com/api/player.js"></script>
+        </div>
+        `;
+      }
+      if (index === 1) {
+        htmls = `
+        <div class="embed-video__label"></div>
+
+        <div class="embed-video__box">
+            <iframe src="https://player.vimeo.com/video/965539649?h=48b6ccca34&loop=1" 
+                style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" 
+                allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                <script src="https://player.vimeo.com/api/player.js"></script>
+        </div>
+        `;
+      }
+      if (index === 2) {
+        htmls = `
+        <div class="embed-video__label"></div>
+
+        <div class="embed-video__box">
+            <iframe src="https://player.vimeo.com/video/965543611?h=1327ef04f8&loop=1" 
+            style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" 
+            allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+            <script src="https://player.vimeo.com/api/player.js"></script>
+        </div>
+        `;
+      }
+      if (index === 3) {
+        htmls = `
+        <div class="embed-video__label"></div>
+
+        <div class="embed-video__box">
+            <iframe src="https://player.vimeo.com/video/965538273?h=023aac89fb&loop=1" 
+            style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" 
+            allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+            <script src="https://player.vimeo.com/api/player.js"></script>
+        </div>
+        `;
+      }
+      if (index === 4) {
+        htmls = `
+        <div class="embed-video__label"></div>
+
+        <div class="embed-video__box">
+            <iframe src="https://player.vimeo.com/video/965538879?h=90778083bb&loop=1" 
+            style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" 
+            allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+            <script src="https://player.vimeo.com/api/player.js"></script>
+        </div>
+        `;
+      }
+      if (index === 5) {
+        htmls = `
+        <div class="embed-video__label"></div>
+
+        <div class="embed-video__box">
+            <img src="./assets/img/collage.png" alt="collage" style="width:100%;height:100%;object-fit:contain;">
+        </div>
+        `;
+      }
       const embedVideo = document.querySelector(".embed-video");
+      embedVideo.innerHTML = htmls;
       embedVideo.style.display = "block";
       setTimeout(() => {
         embedVideo.classList.toggle("active");
@@ -322,6 +396,7 @@ const caseButton = () => {
       embedLabel.addEventListener("click", () => {
         embedVideo.classList.remove("active");
         embedVideo.style.display = "none";
+        embedVideo.innerHTML = "";
       });
     });
   });

@@ -411,7 +411,7 @@ a {
 .section-4__brand {
   width: 100%;
   height: 620px;
-  background-color: #8b8b8b;
+  background-color: #fff;
   border-radius: 20px;
   position: relative;
 }
@@ -426,7 +426,7 @@ a {
 .section-4__creative {
   width: calc(100% / 2 - 60px / 2);
   height: 620px;
-  background-color: #8b8b8b;
+  background-color: #fff;
   border-radius: 20px;
   position: relative;
 }
@@ -434,9 +434,14 @@ a {
 .section-4__expert {
   width: calc(100% / 2 - 60px / 2);
   height: 620px;
-  background-color: #8b8b8b;
+  background-color: #fff;
   border-radius: 20px;
   position: relative;
+}
+
+.search {
+  opacity: 0;
+  transition: all 0.5s linear;
 }
 
 .brand-1 {
@@ -489,8 +494,8 @@ a {
   justify-content: center;
   align-items: center; */
   background-color: rgba(0, 0, 0, 0.3);
-  display: none;
-  opacity: 0;
+  display: none; /*none*/
+  opacity: 0; /*0*/
   transition: all 0.28s ease-in-out;
 }
 
@@ -503,11 +508,11 @@ a {
 }
 
 .embed-video__box {
-  width: 1000px;
-  height: 1000px;
-  padding: 60px 40px;
-  background-color: #fff;
+  width: 1250px;
+  height: 690px;
+  background-color: #000;
   border-radius: 20px;
+  overflow: hidden;
   position: relative;
   left: 50%;
   top: 50%;
@@ -1163,7 +1168,7 @@ a {
 }
 
 .section-9__button:hover {
-  background-color: #000;
+  background-color: #282828;
   color: #fff;
 }
 
