@@ -483,16 +483,17 @@ var swiper = new Swiper(".mySwiper", {
   slidesPerView: 5,
   spaceBetween: 30,
   loop: true,
-  // pagination: {
-  //   el: ".swiper-pagination",
-  //   clickable: true,
-  // },
+  speed: 3000,
   autoplay: {
-    delay: 2000,
-    disableOnInteraction: false,
+    enabled: true,
+    delay: 1,
   },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+  // autoplay: {
+  //   delay: 2000,
+  //   disableOnInteraction: false,
+  // },
+  // navigation: {
+  //   nextEl: ".swiper-button-next",
+  //   prevEl: ".swiper-button-prev",
+  // },
 });
