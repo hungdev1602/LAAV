@@ -157,6 +157,75 @@ const popupButtons = () => {
 
 // popup discount and nothing to choose
 const contactButton = () => {
+  const footerDiscount = document.querySelector(".footer__discount-button");
+  footerDiscount.addEventListener("click", () => {
+    let htmls = `
+      <div class="contact-popup__box">
+            <div class="contact-popup__top">
+                <img src="./assets/img/discount.svg" alt="">
+                <div class="contact-popup__box-title">
+                    <h4>Скидка 10%</h4>
+                    <p>при заключение договора в течение 2-х дней</p>
+                </div>
+            </div>
+            <div class="contact-popup__wrap">
+                <div class="contact-popup__left">
+                    <form class="contact-popup__form" action="">
+                        <input class="contact-popup__form--child form--inp" type="text" placeholder="Имя">
+                        <input class="contact-popup__form--child form--inp" type="email" placeholder="Email">
+                        <input class="contact-popup__form--child form--inp" type="tel" placeholder="Телефон">
+                        <select class="contact-popup__form--child" name="services" id="">
+                            <option value="">Услуга</option>
+                            <option value="val1">Полноценное создание коротких роликов</option>
+                            <option value="val2">Создание рекламных роликов</option>
+                            <option value="val3">Youtube шоу, подкасты, интервью</option>
+                            <option value="val4">Креативная съемка</option>
+                            <option value="val5">Обучающие видеоролики</option>
+                            <option value="val6">Создание снипетов и клипов</option>
+                            <option value="val7">Единичная услуга</option>
+                            <option value="val8">Другое</option>
+                        </select>
+                    </form>
+                </div>
+
+                <div class="contact-popup__right">
+                    <div class="contact-popup__content">
+                        <h4>Расскажите</h4>
+                        <div class="contact-popup__subtitle">
+                            <div class="contact-popup__line"></div>
+                            <span>о проекте</span>
+                        </div>
+                    </div>
+                    <div class="contact-popup__subcontent">
+                        <div class="contact-popup__desc">Оставьте заявку и мы свяжемся с вами, чтобы обсудить проект и
+                            ответить на ваши вопросы</div>
+                        <div class="contact-popup__confirm">Отправляя заявку, вы даете согласие на обработку своих
+                            персональных данных в соответствии с политикой конфиденциальности.</div>
+                    </div>
+
+                    <button class="contact-popup__button">Рассказать о проекте</button>
+
+                </div>
+            </div>
+            <button class="contact-popup__close">&times;</button>
+        </div>
+    `;
+    const contactPopup = document.querySelector(".contact-popup");
+    contactPopup.innerHTML = htmls;
+    const contactPopupClose = document.querySelector(".contact-popup__close");
+    contactPopup.style.display = "flex";
+    setTimeout(() => {
+      contactPopup.classList.toggle("active");
+    }, 10);
+    // contactPopup.addEventListener("click", () => {
+    //   contactPopup.style.display = "none";
+    // });
+    contactPopupClose.addEventListener("click", () => {
+      contactPopup.style.display = "none";
+      contactPopup.classList.toggle("active");
+    });
+    inputError();
+  });
   const buttons = document.querySelectorAll(".contact-button");
   buttons.forEach((button, index) => {
     button.addEventListener("click", () => {
@@ -409,3 +478,21 @@ contactButton();
 inputError();
 watchMore();
 caseButton();
+// Swiper
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 5,
+  spaceBetween: 30,
+  loop: true,
+  // pagination: {
+  //   el: ".swiper-pagination",
+  //   clickable: true,
+  // },
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});

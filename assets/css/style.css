@@ -1053,6 +1053,22 @@ a {
 
 /* End Section 7 */
 
+/* Section 8 */
+.section-8 {
+  margin-bottom: 90px;
+}
+
+.slide-2pics img:first-child {
+  margin-bottom: 20px;
+}
+
+.swiper-slide {
+  width: 320px;
+  height: 660px;
+  margin-right: 40px;
+}
+/* End Section 8 */
+
 /* Section 9 */
 .section-9 {
   padding-top: 40px;
@@ -1289,8 +1305,12 @@ a {
   font-family: var(--font-3);
 }
 
-.footer__discount a {
+.footer__discount button {
+  font-family: var(--font-3);
   color: #000;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
   font-size: 28px;
   font-weight: 400;
   border-bottom: 1px solid #000;
