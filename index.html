@@ -74,19 +74,19 @@
             </div>
 
             <form action="" class="section-2__form">
-                <input type="text" placeholder="Имя" class="section-2__form--child form--inp">
-                <input type="email" placeholder="Email" class="section-2__form--child form--inp">
-                <input type="tel" placeholder="Телефон" class="section-2__form--child form--inp">
+                <input name="name" type="text" placeholder="Имя" class="section-2__form--child form--inp">
+                <input name="email" type="email" placeholder="Email" class="section-2__form--child form--inp">
+                <input name="tel" type="tel" placeholder="Телефон" class="section-2__form--child form--inp">
                 <select name="services" id="section-2__form--services" class="section-2__form--child">
                     <option value="">Услуга</option>
-                    <option value="val1">Полноценное создание коротких роликов</option>
-                    <option value="val2">Создание рекламных роликов</option>
-                    <option value="val3">Youtube шоу, подкасты, интервью</option>
-                    <option value="val4">Креативная съемка</option>
-                    <option value="val5">Обучающие видеоролики</option>
-                    <option value="val6">Создание снипетов и клипов</option>
-                    <option value="val7">Единичная услуга</option>
-                    <option value="val8">Другое</option>
+                    <option value="Полноценное создание коротких роликов">Полноценное создание коротких роликов</option>
+                    <option value="Создание рекламных роликов">Создание рекламных роликов</option>
+                    <option value="Youtube шоу, подкасты, интервью">Youtube шоу, подкасты, интервью</option>
+                    <option value="Креативная съемка">Креативная съемка</option>
+                    <option value="Обучающие видеоролики">Обучающие видеоролики</option>
+                    <option value="Создание снипетов и клипов">Создание снипетов и клипов</option>
+                    <option value="Единичная услуга">Единичная услуга</option>
+                    <option value="Другое">Другое</option>
                 </select>
                 <button class="section-2__form--child section-2__button">Обсудить проект</button>
             </form>
@@ -471,19 +471,23 @@
             <div class="section-9__wrap">
                 <div class="section-9__left">
                     <form class="section-9__form" action="">
-                        <input class="section-9__form--child form--inp" type="text" placeholder="Имя">
-                        <input class="section-9__form--child form--inp" type="email" placeholder="Email">
-                        <input class="section-9__form--child form--inp" type="tel" placeholder="Телефон">
-                        <select class="section-9__form--child" name="services" id="">
+                        <input id="section-9__name" class="section-9__form--child form--inp" type="text"
+                            placeholder="Имя">
+                        <input id="section-9__email" class="section-9__form--child form--inp" type="email"
+                            placeholder="Email">
+                        <input id="section-9__tel" class="section-9__form--child form--inp" type="tel"
+                            placeholder="Телефон">
+                        <select id="section-9__services" class="section-9__form--child" name="services" id="">
                             <option value="">Услуга</option>
-                            <option value="val1">Полноценное создание коротких роликов</option>
-                            <option value="val2">Создание рекламных роликов</option>
-                            <option value="val3">Youtube шоу, подкасты, интервью</option>
-                            <option value="val4">Креативная съемка</option>
-                            <option value="val5">Обучающие видеоролики</option>
-                            <option value="val6">Создание снипетов и клипов</option>
-                            <option value="val7">Единичная услуга</option>
-                            <option value="val8">Другое</option>
+                            <option value="Полноценное создание коротких роликов">Полноценное создание коротких роликов
+                            </option>
+                            <option value="Создание рекламных роликов">Создание рекламных роликов</option>
+                            <option value="Youtube шоу, подкасты, интервью">Youtube шоу, подкасты, интервью</option>
+                            <option value="Креативная съемка">Креативная съемка</option>
+                            <option value="Обучающие видеоролики">Обучающие видеоролики</option>
+                            <option value="Создание снипетов и клипов">Создание снипетов и клипов</option>
+                            <option value="Единичная услуга">Единичная услуга</option>
+                            <option value="Другое">Другое</option>
                         </select>
                     </form>
                 </div>
@@ -555,6 +559,17 @@
     </footer>
     <!-- End Footer -->
 
+
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "D5ILhV16025IKI7kQ",
+            });
+        })();
+    </script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Javascript -->

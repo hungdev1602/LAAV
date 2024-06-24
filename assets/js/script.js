@@ -47,7 +47,7 @@ const popupButtons = () => {
       if (index === 0) {
         htmls = `
         <div class="section-5__popup-box">
-            <img class="section-5__popup-img" src="./assets/img/img_test.jpg" alt="">
+            <img class="section-5__popup-img" src="./assets/img/service_1.png" alt="">
             <div class="section-5__popup-title">Полноценное создание коротких роликов</div>
             <div class="section-5__popup-desc">Мы продвигаем ваш бренд за счет создания коротких роликов в таких
                 соцсетях, как Инстаграм, Ютуб, Тик-Ток и др. Такой формат является наиболее популярным и
@@ -60,7 +60,7 @@ const popupButtons = () => {
       if (index === 1) {
         htmls = `
         <div class="section-5__popup-box">
-            <img class="section-5__popup-img" src="./assets/img/img_test.jpg" alt="">
+            <img class="section-5__popup-img" src="./assets/img/service_1.png" alt="">
             <div class="section-5__popup-title">Креативная съемка</div>
             <div class="section-5__popup-desc">Креативная съемка повысит узнаваемость бренда и покажет его позиционирование на рынке, выделит среди конкурентов.
                 Мы составим креативную концепцию и реализуем ваши задумки.</div>
@@ -72,7 +72,7 @@ const popupButtons = () => {
       if (index === 2) {
         htmls = `
         <div class="section-5__popup-box">
-            <img class="section-5__popup-img" src="./assets/img/img_test.jpg" alt="">
+            <img class="section-5__popup-img" src="./assets/img/service_1.png" alt="">
             <div class="section-5__popup-title">Создание рекламных роликов</div>
             <div class="section-5__popup-desc">Один из наиболее эффективных способов продвижения вашего бизнеса - это создание качественного промо-видео.<br><br>
                 — мы берем на себя все этапы производства: от сбора команды и подготовки материалов до контроля за всем процессом<br><br>
@@ -85,7 +85,7 @@ const popupButtons = () => {
       if (index === 3) {
         htmls = `
         <div class="section-5__popup-box">
-            <img class="section-5__popup-img" src="./assets/img/img_test.jpg" alt="">
+            <img class="section-5__popup-img" src="./assets/img/service_2.png" alt="">
             <div class="section-5__popup-title">Youtube шоу, подкасты, интервью</div>
             <div class="section-5__popup-desc">Для прокачки личного бренды и охвата широкой аудитории предлагаем полноценное курирование данной услуги: мы подготовим креативную идею, сценарий, локации, образы, а также организуем весь продакшн от начала до конца.<br><br>
                 С вас — присутствие в кадре!</div>
@@ -97,7 +97,7 @@ const popupButtons = () => {
       if (index === 4) {
         htmls = `
         <div class="section-5__popup-box">
-            <img class="section-5__popup-img" src="./assets/img/img_test.jpg" alt="">
+            <img class="section-5__popup-img" src="./assets/img/service_2.png" alt="">
             <div class="section-5__popup-title">Обучающие видеоролики</div>
             <div class="section-5__popup-desc">Вы хотите запустить свой образовательный продукт? Поможем записать видео-лекции, мастер-классы и др. Сформируем вашу подачу, визуал и продемонстрируем вашу экспертность.</div>
             <div class="section-5__popup-button contact-button">Рассказать о проекте</div>
@@ -108,7 +108,7 @@ const popupButtons = () => {
       if (index === 5) {
         htmls = `
         <div class="section-5__popup-box">
-            <img class="section-5__popup-img" src="./assets/img/img_test.jpg" alt="">
+            <img class="section-5__popup-img" src="./assets/img/service_2.png" alt="">
             <div class="section-5__popup-title">Создание сниппетов и клипов</div>
             <div class="section-5__popup-desc">Професисональная команда занимается видео предпродакшеном и продакшеном клипов и сниппетов, весь процесс на нас от “камера мотор” до “снято”.<br><br>
                 Реализуем все ваши задумки!</div>
@@ -120,7 +120,7 @@ const popupButtons = () => {
       if (index === 6) {
         htmls = `
         <div class="section-5__popup-box">
-            <img class="section-5__popup-img" src="./assets/img/img_test.jpg" alt="">
+            <img class="section-5__popup-img" src="./assets/img/service_2.png" alt="">
             <div class="section-5__popup-title">Единичная услуга</div>
             <div class="section-5__popup-desc">Проводим съемку ваших мероприятий: мастер-классы, выступления и др.<br><br>
                 Монтаж<br><br>
@@ -171,19 +171,19 @@ const contactButton = () => {
             <div class="contact-popup__wrap">
                 <div class="contact-popup__left">
                     <form class="contact-popup__form" action="">
-                        <input class="contact-popup__form--child form--inp" type="text" placeholder="Имя">
-                        <input class="contact-popup__form--child form--inp" type="email" placeholder="Email">
-                        <input class="contact-popup__form--child form--inp" type="tel" placeholder="Телефон">
-                        <select class="contact-popup__form--child" name="services" id="">
+                        <input id="contact-popup__name" class="contact-popup__form--child form--inp" type="text" placeholder="Имя">
+                        <input id="contact-popup__email" class="contact-popup__form--child form--inp" type="email" placeholder="Email">
+                        <input id="contact-popup__tel" class="contact-popup__form--child form--inp" type="tel" placeholder="Телефон">
+                        <select id="contact-popup__services" class="contact-popup__form--child" name="services" id="">
                             <option value="">Услуга</option>
-                            <option value="val1">Полноценное создание коротких роликов</option>
-                            <option value="val2">Создание рекламных роликов</option>
-                            <option value="val3">Youtube шоу, подкасты, интервью</option>
-                            <option value="val4">Креативная съемка</option>
-                            <option value="val5">Обучающие видеоролики</option>
-                            <option value="val6">Создание снипетов и клипов</option>
-                            <option value="val7">Единичная услуга</option>
-                            <option value="val8">Другое</option>
+                            <option value="Полноценное создание коротких роликов">Полноценное создание коротких роликов</option>
+                            <option value="Создание рекламных роликов">Создание рекламных роликов</option>
+                            <option value="Youtube шоу, подкасты, интервью">Youtube шоу, подкасты, интервью</option>
+                            <option value="Креативная съемка">Креативная съемка</option>
+                            <option value="Обучающие видеоролики">Обучающие видеоролики</option>
+                            <option value="Создание снипетов и клипов">Создание снипетов и клипов</option>
+                            <option value="Единичная услуга">Единичная услуга</option>
+                            <option value="Другое">Другое</option>
                         </select>
                     </form>
                 </div>
@@ -217,9 +217,27 @@ const contactButton = () => {
     setTimeout(() => {
       contactPopup.classList.toggle("active");
     }, 10);
-    // contactPopup.addEventListener("click", () => {
-    //   contactPopup.style.display = "none";
-    // });
+    const buttonContact = document.querySelector(".contact-popup__button");
+    buttonContact.addEventListener("click", () => {
+      let parms1 = {
+        name: document.querySelector("#contact-popup__name").value,
+        email: document.querySelector("#contact-popup__email").value,
+        telephone: document.querySelector("#contact-popup__tel").value,
+        service: document.querySelector("#contact-popup__services").value,
+      };
+      emailjs
+        .send("service_h57zr3r", "template_04onz8a", parms1)
+        .then(() => {
+          document.querySelector("#contact-popup__name").value = "";
+          document.querySelector("#contact-popup__email").value = "";
+          document.querySelector("#contact-popup__tel").value = "";
+          document.querySelector("#contact-popup__services").value = "";
+          alert("Email sent");
+        })
+        .catch((error) => {
+          alert("Ошибка отправление");
+        });
+    });
     contactPopupClose.addEventListener("click", () => {
       contactPopup.style.display = "none";
       contactPopup.classList.toggle("active");
@@ -242,19 +260,19 @@ const contactButton = () => {
             <div class="contact-popup__wrap">
                 <div class="contact-popup__left">
                     <form class="contact-popup__form" action="">
-                        <input class="contact-popup__form--child form--inp" type="text" placeholder="Имя">
-                        <input class="contact-popup__form--child form--inp" type="email" placeholder="Email">
-                        <input class="contact-popup__form--child form--inp" type="tel" placeholder="Телефон">
-                        <select class="contact-popup__form--child" name="services" id="">
+                        <input id="contact-popup__name" class="contact-popup__form--child form--inp" type="text" placeholder="Имя">
+                        <input id="contact-popup__email" class="contact-popup__form--child form--inp" type="email" placeholder="Email">
+                        <input id="contact-popup__tel" class="contact-popup__form--child form--inp" type="tel" placeholder="Телефон">
+                        <select id="contact-popup__services" class="contact-popup__form--child" name="services" id="">
                             <option value="">Услуга</option>
-                            <option value="val1">Полноценное создание коротких роликов</option>
-                            <option value="val2">Создание рекламных роликов</option>
-                            <option value="val3">Youtube шоу, подкасты, интервью</option>
-                            <option value="val4">Креативная съемка</option>
-                            <option value="val5">Обучающие видеоролики</option>
-                            <option value="val6">Создание снипетов и клипов</option>
-                            <option value="val7">Единичная услуга</option>
-                            <option value="val8">Другое</option>
+                            <option value="Полноценное создание коротких роликов">Полноценное создание коротких роликов</option>
+                            <option value="Создание рекламных роликов">Создание рекламных роликов</option>
+                            <option value="Youtube шоу, подкасты, интервью">Youtube шоу, подкасты, интервью</option>
+                            <option value="Креативная съемка">Креативная съемка</option>
+                            <option value="Обучающие видеоролики">Обучающие видеоролики</option>
+                            <option value="Создание снипетов и клипов">Создание снипетов и клипов</option>
+                            <option value="Единичная услуга">Единичная услуга</option>
+                            <option value="Другое">Другое</option>
                         </select>
                     </form>
                 </div>
@@ -295,19 +313,19 @@ const contactButton = () => {
             <div class="contact-popup__wrap">
                 <div class="contact-popup__left">
                     <form class="contact-popup__form" action="">
-                        <input class="contact-popup__form--child form--inp" type="text" placeholder="Имя">
-                        <input class="contact-popup__form--child form--inp" type="email" placeholder="Email">
-                        <input class="contact-popup__form--child form--inp" type="tel" placeholder="Телефон">
-                        <select class="contact-popup__form--child" name="services" id="">
+                        <input id="contact-popup__name" class="contact-popup__form--child form--inp" type="text" placeholder="Имя">
+                        <input id="contact-popup__email" class="contact-popup__form--child form--inp" type="email" placeholder="Email">
+                        <input id="contact-popup__tel" class="contact-popup__form--child form--inp" type="tel" placeholder="Телефон">
+                        <select id="contact-popup__services" class="contact-popup__form--child" name="services" id="">
                             <option value="">Услуга</option>
-                            <option value="val1">Полноценное создание коротких роликов</option>
-                            <option value="val2">Создание рекламных роликов</option>
-                            <option value="val3">Youtube шоу, подкасты, интервью</option>
-                            <option value="val4">Креативная съемка</option>
-                            <option value="val5">Обучающие видеоролики</option>
-                            <option value="val6">Создание снипетов и клипов</option>
-                            <option value="val7">Единичная услуга</option>
-                            <option value="val8">Другое</option>
+                            <option value="Полноценное создание коротких роликов">Полноценное создание коротких роликов</option>
+                            <option value="Создание рекламных роликов">Создание рекламных роликов</option>
+                            <option value="Youtube шоу, подкасты, интервью">Youtube шоу, подкасты, интервью</option>
+                            <option value="Креативная съемка">Креативная съемка</option>
+                            <option value="Обучающие видеоролики">Обучающие видеоролики</option>
+                            <option value="Создание снипетов и клипов">Создание снипетов и клипов</option>
+                            <option value="Единичная услуга">Единичная услуга</option>
+                            <option value="Другое">Другое</option>
                         </select>
                     </form>
                 </div>
@@ -342,9 +360,27 @@ const contactButton = () => {
       setTimeout(() => {
         contactPopup.classList.toggle("active");
       }, 10);
-      // contactPopup.addEventListener("click", () => {
-      //   contactPopup.style.display = "none";
-      // });
+      const buttonContact = document.querySelector(".contact-popup__button");
+      buttonContact.addEventListener("click", () => {
+        let parms1 = {
+          name: document.querySelector("#contact-popup__name").value,
+          email: document.querySelector("#contact-popup__email").value,
+          telephone: document.querySelector("#contact-popup__tel").value,
+          service: document.querySelector("#contact-popup__services").value,
+        };
+        emailjs
+          .send("service_h57zr3r", "template_04onz8a", parms1)
+          .then(() => {
+            document.querySelector("#contact-popup__name").value = "";
+            document.querySelector("#contact-popup__email").value = "";
+            document.querySelector("#contact-popup__tel").value = "";
+            document.querySelector("#contact-popup__services").value = "";
+            alert("Email sent");
+          })
+          .catch((error) => {
+            alert("Ошибка отправление");
+          });
+      });
       contactPopupClose.addEventListener("click", () => {
         contactPopup.style.display = "none";
         contactPopup.classList.toggle("active");
@@ -471,6 +507,54 @@ const caseButton = () => {
   });
 };
 
+// ============================================= SEND EMAIL FROM FORM =================================
+const sendEmail1 = () => {
+  const formEmail = document.querySelector(".section-2__form");
+  formEmail.addEventListener("submit", (e) => {
+    e.preventDefault();
+    let parms = {
+      name: e.target.elements.name.value,
+      email: e.target.elements.email.value,
+      telephone: e.target.elements.tel.value,
+      service: e.target.elements.services.value,
+    };
+    emailjs
+      .send("service_h57zr3r", "template_04onz8a", parms)
+      .then(() => {
+        e.target.elements.name.value = "";
+        e.target.elements.email.value = "";
+        e.target.elements.tel.value = "";
+        e.target.elements.services.value = "";
+        alert("Email sent");
+      })
+      .catch((error) => {
+        alert("Ошибка отправление");
+      });
+  });
+
+  const buttonSection9 = document.querySelector(".section-9__button");
+  buttonSection9.addEventListener("click", () => {
+    let parms1 = {
+      name: document.querySelector("#section-9__name").value,
+      email: document.querySelector("#section-9__email").value,
+      telephone: document.querySelector("#section-9__tel").value,
+      service: document.querySelector("#section-9__services").value,
+    };
+    emailjs
+      .send("service_h57zr3r", "template_04onz8a", parms1)
+      .then(() => {
+        document.querySelector("#section-9__name").value = "";
+        document.querySelector("#section-9__email").value = "";
+        document.querySelector("#section-9__tel").value = "";
+        document.querySelector("#section-9__services").value = "";
+        alert("Email sent");
+      })
+      .catch((error) => {
+        alert("Ошибка отправление");
+      });
+  });
+};
+
 // GỌi các hàm mặc định =============================================
 
 popupButtons();
@@ -478,6 +562,7 @@ contactButton();
 inputError();
 watchMore();
 caseButton();
+sendEmail1();
 // Swiper
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 5,
@@ -488,12 +573,4 @@ var swiper = new Swiper(".mySwiper", {
     enabled: true,
     delay: 1,
   },
-  // autoplay: {
-  //   delay: 2000,
-  //   disableOnInteraction: false,
-  // },
-  // navigation: {
-  //   nextEl: ".swiper-button-next",
-  //   prevEl: ".swiper-button-prev",
-  // },
 });

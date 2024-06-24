@@ -652,6 +652,7 @@ a {
   width: 520px;
   height: 185px;
   object-fit: cover;
+  border-radius: 20px;
   margin-bottom: 20px;
 }
 
