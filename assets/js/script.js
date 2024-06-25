@@ -37,6 +37,37 @@ const inputError = () => {
   });
 };
 
+// ============================================================ SỰ KIỆN CÁC NÚT NAVBAR Ở HEADER=============================================
+const headerNav = () => {
+  const navButtons = document.querySelectorAll(".header__nav");
+  navButtons.forEach((button, index) => {
+    if (index === 0) {
+      button.addEventListener("click", () => {
+        const aboutUs = document.querySelector(".section-3");
+        aboutUs.scrollIntoView({ behavior: "smooth" });
+      });
+    }
+    if (index === 1) {
+      button.addEventListener("click", () => {
+        const cases = document.querySelector(".section-4");
+        cases.scrollIntoView({ behavior: "smooth" });
+      });
+    }
+    if (index === 2) {
+      button.addEventListener("click", () => {
+        const services = document.querySelector(".section-5");
+        services.scrollIntoView({ behavior: "smooth" });
+      });
+    }
+    if (index === 3) {
+      button.addEventListener("click", () => {
+        const tasks = document.querySelector(".section-6");
+        tasks.scrollIntoView({ behavior: "smooth" });
+      });
+    }
+  });
+};
+
 // ============================================= show popup =================================
 // popup услуги
 const popupButtons = () => {
@@ -225,18 +256,22 @@ const contactButton = () => {
         telephone: document.querySelector("#contact-popup__tel").value,
         service: document.querySelector("#contact-popup__services").value,
       };
-      emailjs
-        .send("service_h57zr3r", "template_04onz8a", parms1)
-        .then(() => {
-          document.querySelector("#contact-popup__name").value = "";
-          document.querySelector("#contact-popup__email").value = "";
-          document.querySelector("#contact-popup__tel").value = "";
-          document.querySelector("#contact-popup__services").value = "";
-          alert("Email sent");
-        })
-        .catch((error) => {
-          alert("Ошибка отправление");
-        });
+      if (parms1.name && parms1.email && parms1.telephone && parms1.service) {
+        emailjs
+          .send("service_h57zr3r", "template_04onz8a", parms1)
+          .then(() => {
+            document.querySelector("#contact-popup__name").value = "";
+            document.querySelector("#contact-popup__email").value = "";
+            document.querySelector("#contact-popup__tel").value = "";
+            document.querySelector("#contact-popup__services").value = "";
+            alert("Email sent");
+          })
+          .catch((error) => {
+            alert("Ошибка отправление");
+          });
+      } else {
+        alert("Заполните форму");
+      }
     });
     contactPopupClose.addEventListener("click", () => {
       contactPopup.style.display = "none";
@@ -304,9 +339,8 @@ const contactButton = () => {
         htmls = `
           <div class="contact-popup__box">
             <div class="contact-popup__top">
-                <img src="./assets/img/discount.svg" alt="">
                 <div class="contact-popup__box-title">
-                    <h4>Скидка 10%</h4>
+                    <h4><span><img src="./assets/img/discount_black.svg" alt=""></span>Скидка 10%</h4>
                     <p>при заключение договора в течение 2-х дней</p>
                 </div>
             </div>
@@ -368,18 +402,22 @@ const contactButton = () => {
           telephone: document.querySelector("#contact-popup__tel").value,
           service: document.querySelector("#contact-popup__services").value,
         };
-        emailjs
-          .send("service_h57zr3r", "template_04onz8a", parms1)
-          .then(() => {
-            document.querySelector("#contact-popup__name").value = "";
-            document.querySelector("#contact-popup__email").value = "";
-            document.querySelector("#contact-popup__tel").value = "";
-            document.querySelector("#contact-popup__services").value = "";
-            alert("Email sent");
-          })
-          .catch((error) => {
-            alert("Ошибка отправление");
-          });
+        if (parms1.name && parms1.email && parms1.telephone && parms1.service) {
+          emailjs
+            .send("service_h57zr3r", "template_04onz8a", parms1)
+            .then(() => {
+              document.querySelector("#contact-popup__name").value = "";
+              document.querySelector("#contact-popup__email").value = "";
+              document.querySelector("#contact-popup__tel").value = "";
+              document.querySelector("#contact-popup__services").value = "";
+              alert("Email sent");
+            })
+            .catch((error) => {
+              alert("Ошибка отправление");
+            });
+        } else {
+          alert("Заполните форму");
+        }
       });
       contactPopupClose.addEventListener("click", () => {
         contactPopup.style.display = "none";
@@ -544,23 +582,27 @@ const sendEmail1 = () => {
       telephone: document.querySelector("#section-9__tel").value,
       service: document.querySelector("#section-9__services").value,
     };
-    emailjs
-      .send("service_h57zr3r", "template_04onz8a", parms1)
-      .then(() => {
-        document.querySelector("#section-9__name").value = "";
-        document.querySelector("#section-9__email").value = "";
-        document.querySelector("#section-9__tel").value = "";
-        document.querySelector("#section-9__services").value = "";
-        alert("Email sent");
-      })
-      .catch((error) => {
-        alert("Ошибка отправление");
-      });
+    if (parms1.name && parms1.email && parms1.telephone && parms1.service) {
+      emailjs
+        .send("service_h57zr3r", "template_04onz8a", parms1)
+        .then(() => {
+          document.querySelector("#section-9__name").value = "";
+          document.querySelector("#section-9__email").value = "";
+          document.querySelector("#section-9__tel").value = "";
+          document.querySelector("#section-9__services").value = "";
+          alert("Email sent");
+        })
+        .catch((error) => {
+          alert("Ошибка отправление");
+        });
+    } else {
+      alert("Заполните форму");
+    }
   });
 };
 
 // GỌi các hàm mặc định =============================================
-
+headerNav();
 popupButtons();
 contactButton();
 inputError();
