@@ -193,9 +193,8 @@ const contactButton = () => {
     let htmls = `
       <div class="contact-popup__box">
             <div class="contact-popup__top">
-                <img src="./assets/img/discount.svg" alt="">
                 <div class="contact-popup__box-title">
-                    <h4>Скидка 10%</h4>
+                    <h4><span><img src="./assets/img/discount_black.svg" alt=""></span>Скидка 10%</h4>
                     <p>при заключение договора в течение 2-х дней</p>
                 </div>
             </div>
