@@ -518,18 +518,22 @@ const sendEmail1 = () => {
       telephone: e.target.elements.tel.value,
       service: e.target.elements.services.value,
     };
-    emailjs
-      .send("service_h57zr3r", "template_04onz8a", parms)
-      .then(() => {
-        e.target.elements.name.value = "";
-        e.target.elements.email.value = "";
-        e.target.elements.tel.value = "";
-        e.target.elements.services.value = "";
-        alert("Email sent");
-      })
-      .catch((error) => {
-        alert("Ошибка отправление");
-      });
+    if (parms.name && parms.email && parms.telephone) {
+      emailjs
+        .send("service_h57zr3r", "template_04onz8a", parms)
+        .then(() => {
+          e.target.elements.name.value = "";
+          e.target.elements.email.value = "";
+          e.target.elements.tel.value = "";
+          e.target.elements.services.value = "";
+          alert("Email sent");
+        })
+        .catch((error) => {
+          alert("Ошибка отправление");
+        });
+    } else {
+      alert("Заполните форму");
+    }
   });
 
   const buttonSection9 = document.querySelector(".section-9__button");
