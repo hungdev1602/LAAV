@@ -1292,6 +1292,7 @@ a {
   font-size: 20px;
   font-weight: 400;
   margin-bottom: 10px;
+  font-family: var(--font-5);
 }
 
 .footer__contact-policy {
@@ -1299,6 +1300,7 @@ a {
   font-size: 20px;
   font-weight: 400;
   color: #000;
+  font-family: var(--font-5);
 }
 
 .footer__desc {
@@ -1346,6 +1348,7 @@ a {
 .footer__socials-item p {
   font-size: 20px;
   font-weight: 400;
+  font-family: var(--font-5);
 }
 
 .footer__socials-item span {
