@@ -983,6 +983,7 @@ a {
   padding: 9px 20px;
   border-radius: 12px;
   font-size: 32px;
+  font-family: var(--font-5);
   width: 96%;
   color: #000;
   background-color: #fff;
@@ -1231,7 +1232,7 @@ a {
 }
 
 .section-9__button {
-  font-family: var(--font-3);
+  font-family: var(--font-5);
   margin-top: 8px;
   width: 80%;
   height: 69px;
