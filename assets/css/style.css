@@ -18,11 +18,17 @@
   src: url(../../Fonts/openRunde/OpenRunde-Medium.woff2);
 }
 
+@font-face {
+  font-family: "Tilda Sans";
+  src: url(../../Fonts/tildaSans/TildaSans-Regular.ttf);
+}
+
 :root {
   --font-1: "NT Somic", san-serif;
   --font-2: "Open Runde", san-serif;
   --font-3: "Inter Display", san-serif;
   --font-4: "Open Runde Medium", san-serif;
+  --font-5: "Tilda Sans", san-serif;
 }
 
 * {
@@ -65,7 +71,7 @@ a {
   border: 1px solid #000;
   border-radius: 10px;
   margin-right: 5px;
-  font-family: var(--font-3);
+  font-family: var(--font-5);
   font-size: 20px;
   text-align: center;
   font-weight: 400;
@@ -138,7 +144,7 @@ a {
 /* Section 2 */
 .section-2 {
   margin-bottom: 20px;
-  font-family: var(--font-1);
+  font-family: var(--font-5);
   margin-bottom: 68px;
 }
 
@@ -163,7 +169,7 @@ a {
   top: 0;
   left: 0;
   clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
-  font-size: 40px;
+  font-size: 44px;
   font-weight: 400;
 }
 
@@ -173,9 +179,10 @@ a {
   background-color: #fff;
   position: absolute;
   clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+  padding-top: 15px;
   right: -2px;
   bottom: 0;
-  font-size: 40px;
+  font-size: 44px;
   font-weight: 400;
   text-align: right;
 }
@@ -354,7 +361,7 @@ a {
   height: 70px;
   border-radius: 20px;
   color: #fff;
-  font-family: var(--font-3);
+  font-family: var(--font-5);
   text-align: left;
   border: none;
   background: rgba(255, 255, 255, 0.2);
@@ -383,6 +390,7 @@ a {
 .button-more {
   width: 100%;
   height: 60px;
+  font-family: var(--font-5);
   margin-top: 30px;
   background: #fff;
   border: 1px solid #000;
@@ -552,7 +560,7 @@ a {
 
 .section-5__top-item {
   width: calc(100% / 4 - 30px / 4);
-  height: 158px;
+  height: 142px;
   background: #fff;
   border: 1px solid #999;
   border-radius: 20px;
@@ -572,7 +580,7 @@ a {
 }
 
 .section-5__top-box {
-  font-family: var(--font-3);
+  font-family: var(--font-5);
   width: 75%;
   color: #333;
   font-size: 16px;
@@ -628,7 +636,7 @@ a {
 }
 
 .section-5__bottom-box {
-  font-family: var(--font-3);
+  font-family: var(--font-5);
   width: 75%;
   font-size: 16px;
   font-weight: 400;
@@ -726,7 +734,7 @@ a {
 
 .contact-content {
   display: flex;
-  font-family: var(--font-3);
+  font-family: var(--font-5);
 }
 
 .contact-content img {
@@ -750,7 +758,7 @@ a {
   border: 1px solid #333;
   background-color: #fff;
   cursor: pointer;
-  font-family: var(--font-3);
+  font-family: var(--font-5);
   text-align: center;
   transition: all 0.1s linear;
 }
@@ -781,10 +789,11 @@ a {
   width: calc(100% / 3 - 20px / 3);
   background-color: #fff;
   border: 1px solid #999999;
-  padding: 20px 0 0 20px;
+  padding: 120px 0 0 20px;
   padding-bottom: 20px;
   border-radius: 20px;
   margin-right: 10px;
+  position: relative;
 }
 
 .section-6__item:last-child {
@@ -792,10 +801,12 @@ a {
 }
 
 .section-6__img {
-  width: 80px;
+  width: 130px;
   aspect-ratio: 1/1;
   object-fit: cover;
   margin-bottom: 20px;
+  position: absolute;
+  top: -20px;
 }
 
 .section-6__item h3 {
@@ -810,7 +821,7 @@ a {
 }
 
 .section-6__item p {
-  font-family: var(--font-3);
+  font-family: var(--font-5);
   font-size: 16px;
   font-weight: 400;
   color: #333;
@@ -992,6 +1003,7 @@ a {
   width: 40px;
   height: 40px;
   color: #000;
+  font-size: 23px;
   border: 1px solid #000;
   background-color: #fff;
   border-radius: 50%;
@@ -1064,7 +1076,7 @@ a {
 }
 
 .section-7__subdesc {
-  font-family: var(--font-3);
+  font-family: var(--font-5);
   font-size: 16px;
   font-weight: 400;
   color: #333;
@@ -1076,6 +1088,7 @@ a {
 }
 
 .section-7__bottom-right {
+  padding-top: 248px;
   width: 27%;
 }
 
@@ -1122,7 +1135,7 @@ a {
 
 .section-9__wrap {
   width: 100%;
-  height: 400px;
+  height: 350px;
   opacity: 0;
   /* display: none; */
   overflow: hidden;
@@ -1290,13 +1303,14 @@ a {
 
 .footer__desc {
   position: absolute;
-  left: 231px;
+  left: 290px;
   font-family: var(--font-1);
 }
 
 .footer__desc h4 {
   font-size: 40px;
   font-weight: 400;
+  font-family: var(--font-5);
 }
 
 .footer__socials {
