@@ -72,6 +72,7 @@ a {
 @media (max-width: 575.98px) {
   .container {
     width: 100%;
+    padding: 0 25px;
   }
 }
 /* End Container */
@@ -225,7 +226,7 @@ a {
 @media (max-width: 991.98px) {
   .section-1 {
     font-size: 28px;
-    padding-bottom: 5px;
+    padding-bottom: 42px;
   }
 
   .section-1__top,
@@ -242,7 +243,7 @@ a {
 
 @media (max-width: 575.98px) {
   #video-1 {
-    width: 160px;
+    width: 177px;
     margin-right: 5px;
     height: 24px;
     border-radius: 5px;
@@ -409,7 +410,7 @@ a {
   }
 
   .section-2__contact {
-    height: 40px;
+    height: 35px;
     top: 95%;
     right: 0;
   }
@@ -436,41 +437,53 @@ a {
 
 @media (max-width: 991.98px) {
   .section-2 {
-    margin-bottom: 20px;
+    margin-bottom: 65px;
   }
 
   .section-2__content {
     height: 500px;
   }
 
+  .section-2__video {
+    border-radius: 4px;
+  }
+
   .section-2__video--top {
     width: 62%;
     height: 30px;
     font-size: 15px;
+    top: -25px;
+    background-color: transparent;
   }
 
   .section-2__video--bottom {
-    height: 30px;
-    width: 62%;
+    display: none;
   }
 
   .section-2__contact {
+    width: 100%;
     height: 30px;
+    top: 102%;
+    padding-left: 42%;
   }
 
-  .section-2__contact--round i {
-    font-size: 28px;
+  .section-2__contact a {
+    display: none;
   }
 }
 
 @media (max-width: 767.98px) {
+  .section-2 {
+    margin-bottom: 50px;
+  }
+
   .section-2__content {
     height: 380px;
   }
 
   .section-2__video--top {
     width: 55%;
-    height: 22px;
+    height: 17px;
     font-size: 10px;
   }
 
@@ -480,22 +493,7 @@ a {
   }
 
   .section-2__contact {
-    width: 300px;
-    height: 22px;
-    top: 93%;
-    display: none; /* CHÚ Ý  */
-  }
-
-  .section-2__contact span {
-    font-size: 22px;
-  }
-
-  .section-2__contact--round {
-    padding-top: 6px;
-  }
-
-  .section-2__contact--round i {
-    font-size: 22px;
+    padding-left: 40%;
   }
 }
 
@@ -504,9 +502,13 @@ a {
     height: 177px;
   }
 
-  .section-2__video--top {
-    width: 81%;
-    top: -5px;
+  .section-2__contact {
+    height: 20px;
+    padding-left: 44%;
+  }
+
+  .section-2__contact span {
+    font-size: 10px;
   }
 }
 /* End Section 2 */
@@ -654,10 +656,12 @@ a {
 
   .section-3__sub-title {
     font-size: 8px;
+    padding: 0 90px;
   }
 
   .section-3__month {
     margin-right: 10px;
+    width: 50%;
   }
 
   .section-3__project {
@@ -856,6 +860,9 @@ a {
 }
 
 @media (max-width: 767.98px) {
+  .section-4 {
+    margin-bottom: 20px;
+  }
   .section-4__brand,
   .section-4__expert,
   .section-4__creative {
@@ -887,6 +894,10 @@ a {
     padding-left: 200px;
   }
 
+  .button img {
+    display: none;
+  }
+
   .button-more {
     height: 35px;
     font-size: 22px;
@@ -916,7 +927,7 @@ a {
 
   .button {
     font-size: 12px;
-    padding-left: 16px;
+    padding-left: 35px;
   }
 
   .button.button-width {
@@ -1077,6 +1088,178 @@ a {
   color: #333;
   margin-top: 20px;
 }
+
+.section-5__50 {
+  width: 50%;
+}
+
+.section-5__65 {
+  width: 65%;
+}
+
+@media (max-width: 1700px) {
+  .section-5__top-item h3 {
+    font-size: 16px;
+  }
+
+  .section-5__top-box {
+    font-size: 12px;
+  }
+
+  .section-5__50 {
+    width: 70%;
+  }
+
+  .section-5__bottom-item h3 {
+    font-size: 16px;
+  }
+
+  .section-5__bottom-box {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .section-5__top {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .section-5__top-item {
+    width: 49%;
+    margin-bottom: 15px;
+  }
+
+  .section-5__top-item:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .section-5__bottom {
+    margin: 0;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .section-5__bottom {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .section-5__bottom-item {
+    margin-bottom: 15px;
+  }
+
+  .section-5__bottom-item:nth-child(1) {
+    width: 49%;
+    margin-right: 10px;
+  }
+  .section-5__bottom-item:nth-child(2) {
+    width: 49%;
+    margin-right: 0;
+  }
+
+  .section-5__bottom-item:nth-child(3) {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .section-5__title {
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .section-5__details {
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    font-size: 18px;
+  }
+
+  .contact {
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .section-5 {
+    margin-bottom: 10px;
+  }
+
+  .section-5__top-item {
+    width: 48%;
+    height: 78px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    padding: 5px;
+  }
+
+  .section-5__top-item h3 {
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .section-5__top-box {
+    width: 100%;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 6px;
+    padding: 0 8%;
+  }
+
+  .section-5__details {
+    width: 11px;
+    height: 11px;
+    font-size: 7px;
+    right: 50%;
+    bottom: 6px;
+  }
+
+  .section-5__bottom-item {
+    width: 48%;
+    height: 78px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    padding: 5px;
+    border-radius: 4px;
+  }
+
+  .section-5__bottom-item:nth-child(1) {
+    width: 48%;
+  }
+
+  .section-5__bottom-item:nth-child(2) {
+    width: 48%;
+  }
+
+  .section-5__bottom-item h3 {
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .section-5__bottom-box {
+    width: 100%;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 6px;
+    padding: 0 8%;
+  }
+
+  .h3-second {
+    margin-bottom: 22px;
+  }
+
+  .h3-seventh {
+    margin-bottom: 16px;
+  }
+
+  .bottom-seventh {
+    padding: 0 35%;
+  }
+}
 /* popup */
 
 .section-5__popup {
@@ -1201,6 +1384,52 @@ a {
   background-color: #282828;
   color: #fff;
 }
+
+@media (max-width: 767.98px) {
+  .contact {
+    margin-top: 5px;
+    flex-wrap: wrap;
+    background-color: #282828;
+    color: #fff;
+  }
+
+  .contact-content {
+    width: 100%;
+    padding-left: 10%;
+    margin-bottom: 5px;
+  }
+
+  .contact-title {
+    text-align: center;
+  }
+
+  .contact-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .contact {
+    padding: 5px;
+    border-radius: 4px;
+  }
+
+  .contact-content {
+    padding-left: 20%;
+  }
+
+  .contact-content div {
+    font-size: 12px;
+  }
+
+  .contact-content p {
+    font-size: 6px;
+  }
+
+  .contact-button {
+    font-size: 10px;
+  }
+}
 /* End Contact menu */
 
 /* Section 6 */
@@ -1260,6 +1489,7 @@ a {
   font-weight: 400;
   color: #333;
 }
+
 /* End Section 6 */
 
 /* Contact Popup */
