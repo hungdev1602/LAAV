@@ -619,3 +619,34 @@ var swiper = new Swiper(".mySwiper", {
     delay: 1,
   },
 });
+
+var windowWidth = window.innerWidth;
+
+// Kiểm tra nếu kích thước màn hình nhỏ hơn 768px (ví dụ)
+if (windowWidth < 767.98) {
+  // Lấy thẻ HTML cần thêm class
+  const element1 = document.querySelector(".section-6__swiper1");
+  // Thêm class vào thẻ HTML
+  element1.classList.add("swiper");
+  element1.classList.add("mySwiper1");
+
+  const element2 = document.querySelector(".section-6__wrap");
+  element2.classList.add("swiper-wrapper");
+
+  const elements3 = document.querySelectorAll(".section-6__item");
+  elements3.forEach((item) => {
+    item.classList.add("swiper-slide");
+    item.style.height = "105px";
+    item.style.width = "185px";
+  });
+}
+
+var swiper = new Swiper(".mySwiper1", {
+  slidesPerView: 2.5,
+  centeredSlides: false,
+  spaceBetween: 10,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});

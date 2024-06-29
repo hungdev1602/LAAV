@@ -1418,12 +1418,20 @@ a {
     padding-left: 20%;
   }
 
+  .contact-content img {
+    display: none;
+  }
+
   .contact-content div {
     font-size: 12px;
   }
 
   .contact-content p {
     font-size: 6px;
+  }
+
+  .contact-discount {
+    padding-left: 17%;
   }
 
   .contact-button {
@@ -1490,6 +1498,72 @@ a {
   color: #333;
 }
 
+.section-6__80 {
+  width: 80%;
+}
+
+.section-6__60 {
+  width: 60%;
+}
+
+.section-6__69 {
+  width: 69%;
+}
+
+@media (max-width: 1199.98px) {
+  .section-6__img {
+    width: 90px;
+  }
+
+  .section-6__item {
+    padding-top: 70px;
+  }
+
+  .section-6__item h3 {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .section-6__item p {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .section-6__img {
+    width: 60px;
+    top: 5px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .section-6__item {
+    padding-top: 50px;
+    padding-left: 5px;
+    border-radius: 4px;
+  }
+
+  .section-6__img {
+    width: 38px;
+  }
+
+  .section-6__item h3 {
+    font-size: 7px;
+    margin-bottom: 5px;
+  }
+
+  .section-6__item p {
+    font-size: 5px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .section-6__title {
+    font-size: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
 /* End Section 6 */
 
 /* Contact Popup */
