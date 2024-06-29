@@ -624,6 +624,7 @@ const windowWidth = window.innerWidth;
 
 // Kiểm tra nếu kích thước màn hình nhỏ hơn 768px (ví dụ)
 if (windowWidth < 767.98) {
+  // Section 6=========
   // Lấy thẻ HTML cần thêm class
   const element1 = document.querySelector(".section-6__swiper1");
   // Thêm class vào thẻ HTML
@@ -639,10 +640,24 @@ if (windowWidth < 767.98) {
     item.style.height = "105px";
     item.style.width = "185px";
   });
+
+  // Section 7=========
+
+  const element4 = document.querySelector(".section-7__swiper1");
+  element4.classList.add("swiper");
+  element4.classList.add("mySwiper1");
+
+  const element5 = document.querySelector(".section-7__wrap1");
+  element5.classList.add("swiper-wrapper");
+
+  const elements6 = document.querySelectorAll(".section-7__item-temp");
+  elements6.forEach((item) => {
+    item.classList.add("swiper-slide");
+  });
 }
 
 var swiper = new Swiper(".mySwiper1", {
-  slidesPerView: 2.5,
+  slidesPerView: 2.1,
   centeredSlides: false,
   spaceBetween: 10,
   pagination: {
