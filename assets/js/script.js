@@ -620,7 +620,7 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-var windowWidth = window.innerWidth;
+const windowWidth = window.innerWidth;
 
 // Kiểm tra nếu kích thước màn hình nhỏ hơn 768px (ví dụ)
 if (windowWidth < 767.98) {

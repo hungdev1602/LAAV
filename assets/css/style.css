@@ -1847,7 +1847,11 @@ a {
 .section-7__bottom-right a:last-child {
   margin-right: 0;
 }
-
+@media (max-width: 1199.98px) {
+  .section-7 {
+    display: none;
+  }
+}
 /* End Section 7 */
 
 /* Section 8 */
@@ -2117,6 +2121,12 @@ a {
   font-size: 28px;
   font-weight: 400;
   border-bottom: 1px solid #000;
+}
+
+@media (max-width: 1199.98px) {
+  .footer {
+    display: none;
+  }
 }
 /* End Footer */
 
