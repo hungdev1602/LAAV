@@ -246,7 +246,7 @@ a {
 
 @media (max-width: 575.98px) {
   #video-1 {
-    width: 177px;
+    width: 40%;
     margin-right: 5px;
     height: 24px;
     border-radius: 5px;
@@ -1014,7 +1014,7 @@ a {
   .embed-video__box {
     width: 410px;
     height: 240px;
-    top: 18%;
+    top: 35%;
   }
 }
 /* End Embed video */
@@ -1397,7 +1397,7 @@ a {
   .section-5__popup-box {
     width: 360px;
     padding-top: 38px;
-    top: -32%;
+    top: -15%;
   }
 
   .section-5__popup-img {
