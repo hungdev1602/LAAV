@@ -608,17 +608,6 @@ inputError();
 watchMore();
 caseButton();
 sendEmail1();
-// Swiper
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 5,
-  spaceBetween: 30,
-  loop: true,
-  speed: 3000,
-  autoplay: {
-    enabled: true,
-    delay: 1,
-  },
-});
 
 const windowWidth = window.innerWidth;
 
@@ -667,5 +656,17 @@ var swiper = new Swiper(".mySwiper1", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+  },
+});
+
+// Swiper
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: windowWidth <= 767.98 ? 4 : 5,
+  spaceBetween: windowWidth <= 767.98 ? 10 : 15,
+  loop: true,
+  speed: 3000,
+  autoplay: {
+    enabled: true, //true
+    delay: 1,
   },
 });
