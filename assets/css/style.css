@@ -2940,12 +2940,15 @@ a {
 }
 
 @media (max-width: 575.98px) {
+  .footer {
+    margin-bottom: 20px;
+  }
   .footer__content {
-    height: 400px;
+    height: 150px;
   }
 
   .footer__contact {
-    bottom: 63%;
+    bottom: 4%;
   }
   .footer__contact h4 {
     margin-bottom: 3px;
@@ -2965,7 +2968,7 @@ a {
   }
 
   .footer__socials {
-    top: 26%;
+    top: 67%;
     left: 53%;
   }
 
@@ -2978,8 +2981,8 @@ a {
   }
 
   .footer__discount {
-    left: 77%;
-    top: 26%;
+    left: 76%;
+    top: 67%;
   }
 
   .footer__discount button {
