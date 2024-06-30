@@ -989,6 +989,34 @@ a {
   z-index: 10;
 }
 
+@media (max-width: 1199.98px) {
+  .embed-video__box {
+    width: 1050px;
+    height: 590px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .embed-video__box {
+    width: 900px;
+    height: 490px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .embed-video__box {
+    width: 670px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .embed-video__box {
+    width: 410px;
+    height: 240px;
+    top: 18%;
+  }
+}
 /* End Embed video */
 
 /* Section 5 */
@@ -1338,6 +1366,55 @@ a {
   background-color: #282828;
   color: #fff;
 }
+
+@media (max-width: 767.98px) {
+  .section-5__popup-box {
+    width: 470px;
+    padding: 30px 20px;
+  }
+
+  .section-5__popup-img {
+    width: 430px;
+    height: 122px;
+  }
+
+  .section-5__popup-title {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .section-5__popup-desc {
+    font-size: 12px;
+  }
+
+  .section-5__popup-close {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .section-5__popup-box {
+    width: 360px;
+    padding-top: 38px;
+    top: -32%;
+  }
+
+  .section-5__popup-img {
+    width: 320px;
+    height: 70px;
+  }
+  .section-5__popup-title {
+    font-size: 10px;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+  .section-5__popup-desc {
+    font-size: 6px;
+    margin-bottom: 15px;
+  }
+}
 /* end popup */
 
 /* End Section 5 */
@@ -1416,7 +1493,13 @@ a {
 @media (max-width: 575.98px) {
   .contact {
     padding: 5px;
+    padding-top: 26px;
     border-radius: 4px;
+    position: relative;
+  }
+
+  .contact__for-section-5 {
+    padding: 5px;
   }
 
   .contact-content {
@@ -1424,7 +1507,10 @@ a {
   }
 
   .contact-content img {
-    display: none;
+    width: 20px;
+    position: absolute;
+    top: 5px;
+    left: 50%;
   }
 
   .contact-content div {
@@ -1963,6 +2049,10 @@ a {
     margin-bottom: 5px;
   }
 
+  .section-7__subdesc {
+    font-size: 7px;
+  }
+
   .section-7__item.section-7__item-temp {
     height: 115px;
   }
@@ -1978,6 +2068,10 @@ a {
     font-size: 15px;
     margin-bottom: 10px;
     text-align: center;
+  }
+
+  .section-7__bottom-right a {
+    font-size: 30px;
   }
   .section-7__77 {
     width: 100%;

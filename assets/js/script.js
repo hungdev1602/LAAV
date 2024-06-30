@@ -464,7 +464,7 @@ const caseButton = () => {
         <div class="embed-video__label"></div>
 
         <div class="embed-video__box">
-            <iframe src="https://player.vimeo.com/video/965536708?h=6e1d9eaaff&loop=1"
+            <iframe src="https://player.vimeo.com/video/965536708?h=6e1d9eaaff&autoplay=1&loop=1"
                 style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
                 allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
             <script src="https://player.vimeo.com/api/player.js"></script>
@@ -476,7 +476,7 @@ const caseButton = () => {
         <div class="embed-video__label"></div>
 
         <div class="embed-video__box">
-            <iframe src="https://player.vimeo.com/video/965539649?h=48b6ccca34&loop=1" 
+            <iframe src="https://player.vimeo.com/video/965539649?h=48b6ccca34&autoplay=1&loop=1" 
                 style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" 
                 allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
                 <script src="https://player.vimeo.com/api/player.js"></script>
@@ -488,7 +488,7 @@ const caseButton = () => {
         <div class="embed-video__label"></div>
 
         <div class="embed-video__box">
-            <iframe src="https://player.vimeo.com/video/965543611?h=1327ef04f8&loop=1" 
+            <iframe src="https://player.vimeo.com/video/965543611?h=1327ef04f8&autoplay=1&loop=1" 
             style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" 
             allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
             <script src="https://player.vimeo.com/api/player.js"></script>
@@ -500,7 +500,7 @@ const caseButton = () => {
         <div class="embed-video__label"></div>
 
         <div class="embed-video__box">
-            <iframe src="https://player.vimeo.com/video/965538273?h=023aac89fb&loop=1" 
+            <iframe src="https://player.vimeo.com/video/965538273?h=023aac89fb&autoplay=1&loop=1" 
             style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" 
             allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
             <script src="https://player.vimeo.com/api/player.js"></script>
@@ -512,7 +512,7 @@ const caseButton = () => {
         <div class="embed-video__label"></div>
 
         <div class="embed-video__box">
-            <iframe src="https://player.vimeo.com/video/965538879?h=90778083bb&loop=1" 
+            <iframe src="https://player.vimeo.com/video/965538879?h=90778083bb&autoplay=1&loop=1" 
             style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" 
             allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
             <script src="https://player.vimeo.com/api/player.js"></script>
@@ -654,6 +654,10 @@ if (windowWidth < 767.98) {
   elements6.forEach((item) => {
     item.classList.add("swiper-slide");
   });
+
+  // discount photo
+  const discountPhoto = document.querySelector(".contact-content__img");
+  discountPhoto.src = "./assets/img/discount_white.svg";
 }
 
 var swiper = new Swiper(".mySwiper1", {
