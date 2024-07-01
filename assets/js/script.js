@@ -428,17 +428,6 @@ const contactButton = () => {
   });
 };
 
-// ============================================= Sự kiện khi scroll đến section 9 cho chạy animation =================================
-window.addEventListener("scroll", function () {
-  var targetElement = document.querySelector(".section-9__wrap");
-  var rect = targetElement.getBoundingClientRect();
-
-  // Kiểm tra xem phần tử có nằm trong viewport chưa
-  if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
-    targetElement.style.animation = "appear 1.5s linear forwards";
-  }
-});
-
 // ============================================= Sự kiện xem thêm và ẩn bớt ở mục кейсы =================================
 const watchMore = () => {
   const buttonWatchMore = document.querySelector(".button-more");
@@ -657,6 +646,23 @@ const headerBurger = () => {
   });
 };
 
+// ============================================= Không cho IOS điều khiển video =================================
+document.addEventListener("DOMContentLoaded", function () {
+  var videoElements = document.querySelectorAll("video");
+
+  videoElements.forEach(function (videoElement) {
+    videoElement.controls = false;
+
+    videoElement.addEventListener("play", function () {
+      this.controls = false;
+    });
+
+    videoElement.addEventListener("pause", function () {
+      this.controls = false;
+    });
+  });
+});
+
 // GỌi các hàm mặc định =============================================
 
 headerNav();
@@ -712,6 +718,7 @@ var swiper = new Swiper(".mySwiper1", {
   slidesPerView: 2.1,
   centeredSlides: false,
   spaceBetween: 10,
+  autoHeight: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,

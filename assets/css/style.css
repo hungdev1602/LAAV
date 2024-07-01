@@ -23,12 +23,18 @@
   src: url(../../Fonts/tildaSans/TildaSans-Regular.ttf);
 }
 
+@font-face {
+  font-family: "Tilda Sans Medium";
+  src: url(../../Fonts/tildaSans/TildaSans-Medium.ttf);
+}
+
 :root {
   --font-1: "NT Somic", san-serif;
   --font-2: "Open Runde", san-serif;
   --font-3: "Inter Display", san-serif;
   --font-4: "Open Runde Medium", san-serif;
   --font-5: "Tilda Sans", san-serif;
+  --font-6: "Tilda Sans Medium", san-serif;
 }
 
 * {
@@ -252,6 +258,7 @@ a {
     width: 50%;
     height: 34px;
     font-size: 20px;
+    color: #000;
   }
 }
 /* End Header burger */
@@ -356,7 +363,7 @@ a {
 
 @media (max-width: 575.98px) {
   #video-1 {
-    width: 40%;
+    width: 37%;
     margin-right: 5px;
     height: 24px;
     border-radius: 5px;
@@ -1056,6 +1063,10 @@ a {
   .button-more {
     margin-top: 5px;
     border-radius: 4px;
+    font-size: 10px;
+    height: 20px;
+    background-color: #000;
+    color: #fff;
   }
 }
 /* End Section 4 */
@@ -1132,7 +1143,7 @@ a {
 /* Section 5 */
 .section-5 {
   margin-bottom: 90px;
-  font-family: var(--font-2);
+  font-family: var(--font-6);
   position: relative;
 }
 
@@ -1162,7 +1173,7 @@ a {
 }
 
 .section-5__top-item h3 {
-  width: 70%;
+  width: 82%;
   font-size: 22px;
   font-weight: 400;
 }
@@ -1238,6 +1249,12 @@ a {
 
 .section-5__65 {
   width: 65%;
+}
+
+.h3-second,
+.h3-fourth,
+.h3-fifth {
+  margin-bottom: 47px;
 }
 
 @media (max-width: 1700px) {
@@ -1353,9 +1370,9 @@ a {
   }
 
   .section-5__details {
-    width: 12px;
-    height: 12px;
-    font-size: 8px;
+    width: 13px;
+    height: 13px;
+    font-size: 10px;
     right: 45%;
     bottom: 6px;
   }
@@ -1393,6 +1410,12 @@ a {
     text-align: center;
     font-size: 6px;
     padding: 0 8%;
+  }
+
+  .h3-second,
+  .h3-fourth,
+  .h3-fifth {
+    margin-bottom: 0;
   }
 
   .h3-second {
@@ -1642,6 +1665,7 @@ a {
 
   .contact-button {
     font-size: 10px;
+    color: #000;
   }
 }
 /* End Contact menu */
@@ -1649,7 +1673,7 @@ a {
 /* Section 6 */
 .section-6 {
   margin-bottom: 90px;
-  font-family: var(--font-2);
+  font-family: var(--font-6);
 }
 
 .section-6__title {
@@ -1770,6 +1794,21 @@ a {
   .section-6__title {
     font-size: 15px;
     margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .section-6__img {
+    left: 35%;
+  }
+
+  .section-6__item h3 {
+    text-align: center;
+    font-size: 10px;
+  }
+
+  .section-6__item p {
+    font-size: 6px;
+    width: 100%;
     text-align: center;
   }
 }
@@ -2067,6 +2106,10 @@ a {
     font-size: 10px;
   }
 
+  .contact-popup__form--child:last-child {
+    color: #000;
+  }
+
   .contact-popup__content h4 {
     font-size: 15px;
     margin-bottom: 5px;
@@ -2098,7 +2141,7 @@ a {
 /* Section 7 */
 .section-7 {
   margin-bottom: 90px;
-  font-family: var(--font-2);
+  font-family: var(--font-6);
 }
 
 .section-7__top {
@@ -2196,6 +2239,10 @@ a {
 }
 
 .section-7__margin {
+  margin-bottom: 47px;
+}
+
+.section-7__margin2 {
   margin-bottom: 47px;
 }
 
@@ -2318,11 +2365,33 @@ a {
     text-align: center;
   }
 
+  .section-7__desc {
+    text-align: center;
+    font-size: 11px;
+  }
+
+  .section-7__subdesc {
+    text-align: center;
+    width: 100%;
+  }
+
+  .section-7__72 {
+    padding: 0 15%;
+  }
+
   .section-7__bottom-right a {
     font-size: 30px;
   }
   .section-7__77 {
     width: 100%;
+  }
+
+  .section-7__operation {
+    margin-bottom: 18px;
+  }
+
+  .section-7__individual {
+    margin-bottom: 27px;
   }
 }
 /* End Section 7 */
@@ -2416,6 +2485,10 @@ a {
     border-radius: 4px;
     aspect-ratio: 1/2.2;
   }
+
+  .slide-1pics img {
+    height: 100%;
+  }
 }
 /* End Section 8 */
 
@@ -2428,9 +2501,7 @@ a {
 .section-9__wrap {
   width: 100%;
   height: 350px;
-  opacity: 0;
-  /* display: none; */
-  overflow: hidden;
+  display: flex;
 }
 
 .section-9__left {
@@ -2679,6 +2750,7 @@ a {
     height: 20px;
     margin-bottom: 5px;
     padding-left: 5px;
+    color: #fff;
   }
 
   .section-9__form--child:last-child {
@@ -3058,14 +3130,14 @@ a {
   }
 
   .footer__contact {
-    bottom: 4%;
+    bottom: 1%;
   }
   .footer__contact h4 {
     margin-bottom: 3px;
   }
 
   .footer__contact-gmail {
-    margin-bottom: -5px;
+    margin-bottom: -8px;
   }
 
   .footer__contact-gmail,
@@ -3078,12 +3150,20 @@ a {
   }
 
   .footer__socials {
-    top: 67%;
-    left: 53%;
+    top: 69%;
+    left: 50%;
+  }
+
+  .footer__socials-item {
+    margin-bottom: 1px;
   }
 
   .footer__socials-item span {
     height: 5px;
+  }
+
+  .footer__socials-item span i {
+    font-size: 6px;
   }
 
   .footer__socials-item p {
@@ -3091,12 +3171,13 @@ a {
   }
 
   .footer__discount {
-    left: 76%;
-    top: 67%;
+    left: 78%;
+    top: 69%;
   }
 
   .footer__discount button {
     font-size: 8px;
+    font-family: var(--font-5);
   }
 }
 /* End Footer */
