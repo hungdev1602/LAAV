@@ -600,7 +600,56 @@ const sendEmail1 = () => {
   });
 };
 
+// ============================================= Header Burger =================================
+const headerBurger = () => {
+  const buttonBurger = document.querySelector(".btn-menu-mobile");
+  buttonBurger.addEventListener("click", () => {
+    const burgerMenu = document.querySelector(".header__burger");
+    burgerMenu.style.display = "flex";
+
+    const burgerMenuButton = document.querySelectorAll(
+      ".header__burger-button"
+    );
+    burgerMenuButton.forEach((button, index) => {
+      if (index === 0) {
+        button.addEventListener("click", () => {
+          const aboutUs = document.querySelector(".section-3");
+          burgerMenu.style.display = "none";
+          aboutUs.scrollIntoView({ behavior: "smooth" });
+        });
+      }
+      if (index === 1) {
+        button.addEventListener("click", () => {
+          const cases = document.querySelector(".section-4");
+          burgerMenu.style.display = "none";
+          cases.scrollIntoView({ behavior: "smooth" });
+        });
+      }
+      if (index === 2) {
+        button.addEventListener("click", () => {
+          const services = document.querySelector(".section-5");
+          burgerMenu.style.display = "none";
+          services.scrollIntoView({ behavior: "smooth" });
+        });
+      }
+      if (index === 3) {
+        button.addEventListener("click", () => {
+          const tasks = document.querySelector(".section-6");
+          burgerMenu.style.display = "none";
+          tasks.scrollIntoView({ behavior: "smooth" });
+        });
+      }
+    });
+
+    const burgerClose = document.querySelector(".header__burger-close");
+    burgerClose.addEventListener("click", () => {
+      burgerMenu.style.display = "none";
+    });
+  });
+};
+
 // GỌi các hàm mặc định =============================================
+
 headerNav();
 popupButtons();
 contactButton();
@@ -608,6 +657,7 @@ inputError();
 watchMore();
 caseButton();
 sendEmail1();
+headerBurger();
 
 const windowWidth = window.innerWidth;
 

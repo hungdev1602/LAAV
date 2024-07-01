@@ -146,6 +146,82 @@ a {
 }
 /* End Header */
 
+/* Header burger */
+.header__burger {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  font-family: var(--font-5);
+  display: none;
+  /* align-items: center; */
+  justify-content: center;
+  background-color: #fff;
+  z-index: 99999;
+}
+
+.header__burger-content {
+  position: relative;
+  width: 80%;
+  padding-top: 50px;
+}
+
+.header__burger-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.header__burger-top img {
+  height: 55px;
+}
+
+.header__burger-close {
+  font-size: 70px;
+  cursor: pointer;
+}
+
+.header__burger-mid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.header__burger-button {
+  width: 40%;
+  height: 50px;
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-family: var(--font-5);
+  border-radius: 4px;
+  background-color: transparent;
+  border: 1px solid #000;
+  cursor: pointer;
+  text-align: center;
+}
+
+.header__burger-button:last-child {
+  margin-bottom: 0;
+}
+
+.header__burger-bottom {
+  text-align: center;
+}
+
+.header__burger-bottom-email,
+.header__burger-bottom-phone {
+  margin-bottom: 15px;
+}
+
+.header__burger-bottom-socials a {
+  color: #000;
+  font-size: 25px;
+}
+/* End Header burger */
+
 /* Section 1 */
 .section-1 {
   padding-bottom: 65px;
