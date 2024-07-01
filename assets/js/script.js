@@ -22,9 +22,10 @@ document.addEventListener("DOMContentLoaded", function () {
 // ============================================================ BÁO LỖI CÁC Ô INPUT KHI FOCUS VÀ BLUR=============================================
 const inputError = () => {
   const inpSection2 = document.querySelectorAll(".form--inp");
+  const windowWidth = window.innerWidth;
   inpSection2.forEach((inp) => {
     inp.addEventListener("focus", () => {
-      inp.style.borderColor = "#000";
+      inp.style.borderColor = windowWidth <= 767.98 ? "#ccc" : "#000";
 
       inp.addEventListener("blur", () => {
         if (inp.value !== "") {
@@ -606,6 +607,9 @@ const headerBurger = () => {
   buttonBurger.addEventListener("click", () => {
     const burgerMenu = document.querySelector(".header__burger");
     burgerMenu.style.display = "flex";
+    setTimeout(() => {
+      burgerMenu.classList.toggle("active");
+    }, 100);
 
     const burgerMenuButton = document.querySelectorAll(
       ".header__burger-button"
@@ -615,6 +619,7 @@ const headerBurger = () => {
         button.addEventListener("click", () => {
           const aboutUs = document.querySelector(".section-3");
           burgerMenu.style.display = "none";
+          burgerMenu.classList.remove("active");
           aboutUs.scrollIntoView({ behavior: "smooth" });
         });
       }
@@ -622,6 +627,7 @@ const headerBurger = () => {
         button.addEventListener("click", () => {
           const cases = document.querySelector(".section-4");
           burgerMenu.style.display = "none";
+          burgerMenu.classList.remove("active");
           cases.scrollIntoView({ behavior: "smooth" });
         });
       }
@@ -629,6 +635,7 @@ const headerBurger = () => {
         button.addEventListener("click", () => {
           const services = document.querySelector(".section-5");
           burgerMenu.style.display = "none";
+          burgerMenu.classList.remove("active");
           services.scrollIntoView({ behavior: "smooth" });
         });
       }
@@ -636,6 +643,7 @@ const headerBurger = () => {
         button.addEventListener("click", () => {
           const tasks = document.querySelector(".section-6");
           burgerMenu.style.display = "none";
+          burgerMenu.classList.remove("active");
           tasks.scrollIntoView({ behavior: "smooth" });
         });
       }
@@ -644,6 +652,7 @@ const headerBurger = () => {
     const burgerClose = document.querySelector(".header__burger-close");
     burgerClose.addEventListener("click", () => {
       burgerMenu.style.display = "none";
+      burgerMenu.classList.remove("active");
     });
   });
 };
@@ -708,6 +717,14 @@ var swiper = new Swiper(".mySwiper1", {
     clickable: true,
   },
 });
+
+if (windowWidth < 991.98) {
+  const section2Button = document.querySelector(".section-2__contact");
+  section2Button.addEventListener("click", () => {
+    const section7 = document.querySelector(".section-7");
+    section7.scrollIntoView({ behavior: "smooth" });
+  });
+}
 
 // Swiper
 var swiper = new Swiper(".mySwiper", {
