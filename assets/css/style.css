@@ -3366,6 +3366,10 @@ a {
   margin-top: 50px;
 }
 
+.section-5__top-price {
+  margin-top: 90px;
+}
+
 .section-5__bottom-item-price {
   height: 134px; /*115*/
 }
@@ -3397,6 +3401,7 @@ a {
   .section-5__top-price {
     margin-top: 20px;
   }
+
   .h3-fourth-price {
     margin-bottom: 20px;
   }
