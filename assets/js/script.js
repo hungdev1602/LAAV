@@ -193,9 +193,9 @@ const contactButton = () => {
   footerDiscount.addEventListener("click", () => {
     let htmls = `
       <div class="contact-popup__box">
-            <div class="contact-popup__top">
+            <div class="contact-popup__top contact-popup__top-mobile1">
                 <div class="contact-popup__box-title">
-                    <h4><span><img src="./assets/img/discount_black.svg" alt=""></span>Скидка 10%</h4>
+                    <h4><span><img class="contact-popup__img-mobile" src="./assets/img/discount_black.svg" alt=""></span>Скидка 10%</h4>
                     <p>при заключение договора в течение 2-х дней</p>
                 </div>
             </div>
@@ -220,21 +220,21 @@ const contactButton = () => {
                 </div>
 
                 <div class="contact-popup__right">
-                    <div class="contact-popup__content">
+                    <div class="contact-popup__content contact-popup__content-mobile1">
                         <h4>Расскажите</h4>
                         <div class="contact-popup__subtitle">
                             <div class="contact-popup__line"></div>
                             <span>о проекте</span>
                         </div>
                     </div>
-                    <div class="contact-popup__subcontent">
+                    <div class="contact-popup__subcontent contact-popup__subcontent-mobile1">
                         <div class="contact-popup__desc">Оставьте заявку и мы свяжемся с вами, чтобы обсудить проект и
                             ответить на ваши вопросы</div>
                         <div class="contact-popup__confirm">Отправляя заявку, вы даете согласие на обработку своих
                             персональных данных в соответствии с политикой конфиденциальности.</div>
                     </div>
 
-                    <button class="contact-popup__button">Рассказать о проекте</button>
+                    <button class="contact-popup__button contact-popup__button-mobile1">Рассказать о проекте</button>
 
                 </div>
             </div>
@@ -285,8 +285,8 @@ const contactButton = () => {
       let htmls = "";
       if (index === 0) {
         htmls = `
-          <div class="contact-popup__box">
-            <div class="contact-popup__top">
+          <div class="contact-popup__box contact-popup__box-mobile">
+            <div class="contact-popup__top contact-popup__top-mobile">
                 <div class="contact-popup__box-title">
                     <h4>Не нашли подходящую для вас услугу?</h4>
                     <p>Свяжитесь с нами и мы поможем выбрать подходящую</p>
@@ -313,21 +313,21 @@ const contactButton = () => {
                 </div>
 
                 <div class="contact-popup__right">
-                    <div class="contact-popup__content">
+                    <div class="contact-popup__content contact-popup__content-mobile">
                         <h4>Расскажите</h4>
-                        <div class="contact-popup__subtitle">
-                            <div class="contact-popup__line"></div>
+                        <div class="contact-popup__subtitle contact-popup__subtitle-mobile">
+                            <div class="contact-popup__line contact-popup__line-mobile"></div>
                             <span>о проекте</span>
                         </div>
                     </div>
-                    <div class="contact-popup__subcontent">
-                        <div class="contact-popup__desc">Оставьте заявку и мы свяжемся с вами, чтобы обсудить проект и
+                    <div class="contact-popup__subcontent contact-popup__subcontent-mobile">
+                        <div class="contact-popup__desc contact-popup__desc-mobile">Оставьте заявку и мы свяжемся с вами, чтобы обсудить проект и
                             ответить на ваши вопросы</div>
-                        <div class="contact-popup__confirm">Отправляя заявку, вы даете согласие на обработку своих
+                        <div class="contact-popup__confirm contact-popup__confirm-mobile">Отправляя заявку, вы даете согласие на обработку своих
                             персональных данных в соответствии с политикой конфиденциальности.</div>
                     </div>
 
-                    <button class="contact-popup__button">Рассказать о проекте</button>
+                    <button class="contact-popup__button contact-popup__button-mobile">Рассказать о проекте</button>
 
                 </div>
             </div>
@@ -338,9 +338,9 @@ const contactButton = () => {
       if (index === 1) {
         htmls = `
           <div class="contact-popup__box">
-            <div class="contact-popup__top">
+            <div class="contact-popup__top contact-popup__top-mobile1">
                 <div class="contact-popup__box-title">
-                    <h4><span><img src="./assets/img/discount_black.svg" alt=""></span>Скидка 10%</h4>
+                    <h4><span><img class="contact-popup__img-mobile" src="./assets/img/discount_black.svg" alt=""></span>Скидка 10%</h4>
                     <p>при заключение договора в течение 2-х дней</p>
                 </div>
             </div>
@@ -365,21 +365,21 @@ const contactButton = () => {
                 </div>
 
                 <div class="contact-popup__right">
-                    <div class="contact-popup__content">
+                    <div class="contact-popup__content contact-popup__content-mobile1">
                         <h4>Расскажите</h4>
                         <div class="contact-popup__subtitle">
                             <div class="contact-popup__line"></div>
                             <span>о проекте</span>
                         </div>
                     </div>
-                    <div class="contact-popup__subcontent">
+                    <div class="contact-popup__subcontent contact-popup__subcontent-mobile1">
                         <div class="contact-popup__desc">Оставьте заявку и мы свяжемся с вами, чтобы обсудить проект и
                             ответить на ваши вопросы</div>
                         <div class="contact-popup__confirm">Отправляя заявку, вы даете согласие на обработку своих
                             персональных данных в соответствии с политикой конфиденциальности.</div>
                     </div>
 
-                    <button class="contact-popup__button">Рассказать о проекте</button>
+                    <button class="contact-popup__button contact-popup__button-mobile1">Рассказать о проекте</button>
 
                 </div>
             </div>
