@@ -98,13 +98,13 @@ a {
 }
 
 .header__menu {
-  width: 370px;
+  width: 445px;
 }
 
 .header__nav {
   display: inline-block;
   padding: 5px 7px;
-  width: calc(100% / 4 - 30px / 4);
+  width: calc(100% / 5 - 40px / 5);
   border: 1px solid #000;
   border-radius: 10px;
   margin-right: 5px;
@@ -533,7 +533,7 @@ a {
   .section-2__contact {
     height: 35px;
     top: 12px;
-    right: 0;
+    right: 5px;
   }
 
   .section-2__form--child {
@@ -1265,6 +1265,10 @@ a {
 }
 
 @media (max-width: 1700px) {
+  .section-5__top-item {
+    height: 118px;
+  }
+
   .section-5__top-item h3 {
     font-size: 16px;
   }
@@ -1275,6 +1279,10 @@ a {
 
   .section-5__50 {
     width: 70%;
+  }
+
+  .section-5__bottom-item {
+    height: 90px;
   }
 
   .section-5__bottom-item h3 {
@@ -1289,6 +1297,8 @@ a {
     height: 30px;
     width: 30px;
     font-size: 19px;
+    bottom: 9px;
+    right: 12px;
   }
 
   .h3-first {
@@ -1493,12 +1503,14 @@ a {
   font-size: 36px;
   font-weight: 400;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .section-5__popup-desc {
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 40px;
+  text-align: center;
 }
 
 .section-5__popup-button {
@@ -2484,6 +2496,10 @@ a {
     text-align: center;
   }
 
+  .section-7__img {
+    margin-left: 43%;
+  }
+
   .section-7__desc {
     text-align: center;
     font-size: 11px;
@@ -2751,6 +2767,10 @@ a {
 
   .section-9__desc {
     font-size: 15px;
+  }
+
+  .section-9__button {
+    width: 87%;
   }
 }
 
@@ -3339,3 +3359,62 @@ a {
   font-weight: 400;
   font-family: var(--font-3);
 }
+/* End  personal policy*/
+
+/* Price */
+.section-5__price {
+  margin-top: 50px;
+}
+
+.section-5__bottom-item-price {
+  height: 134px; /*115*/
+}
+
+.section-5__details-price {
+  bottom: 49px;
+}
+
+.contact-button-popup {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+}
+
+@media (max-width: 1700px) {
+  .section-5__bottom-item-price {
+    height: 115px; /*115*/
+  }
+  .section-5__details-price {
+    bottom: 20px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .section-5__title img {
+    height: 30px;
+  }
+
+  .section-5__top-price {
+    margin-top: 20px;
+  }
+  .h3-fourth-price {
+    margin-bottom: 20px;
+  }
+
+  .h3-seventh-price {
+    margin-bottom: 5px;
+  }
+
+  .section-5__bottom-item-price {
+    height: 67px; /*115*/
+  }
+
+  .section-5__bottom-item-price:last-child {
+    height: 73px;
+  }
+
+  .section-5__details-price {
+    bottom: 5px;
+  }
+}
+/* End Price */

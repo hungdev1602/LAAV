@@ -66,6 +66,11 @@ const headerNav = () => {
         tasks.scrollIntoView({ behavior: "smooth" });
       });
     }
+    if (index === 4) {
+      button.addEventListener("click", () => {
+        window.location.href = "./price.html";
+      });
+    }
   });
 };
 
@@ -84,7 +89,7 @@ const popupButtons = () => {
             <div class="section-5__popup-desc">Мы продвигаем ваш бренд за счет создания коротких роликов в таких
                 соцсетях, как Инстаграм, Ютуб, Тик-Ток и др. Такой формат является наиболее популярным и
                 востребованным среди аудитории.</div>
-            <div class="section-5__popup-button contact-button">Рассказать о проекте</div>
+            <div class="section-5__popup-button contact-button contact-button-popup">Рассказать о проекте</div>
             <div class="section-5__popup-close">&times;</div>
         </div>
       `;
@@ -96,7 +101,7 @@ const popupButtons = () => {
             <div class="section-5__popup-title">Креативная съемка</div>
             <div class="section-5__popup-desc">Креативная съемка повысит узнаваемость бренда и покажет его позиционирование на рынке, выделит среди конкурентов.
                 Мы составим креативную концепцию и реализуем ваши задумки.</div>
-            <div class="section-5__popup-button contact-button">Рассказать о проекте</div>
+            <div class="section-5__popup-button contact-button contact-button-popup">Рассказать о проекте</div>
             <div class="section-5__popup-close">&times;</div>
         </div>
       `;
@@ -109,7 +114,7 @@ const popupButtons = () => {
             <div class="section-5__popup-desc">Один из наиболее эффективных способов продвижения вашего бизнеса - это создание качественного промо-видео.<br><br>
                 — мы берем на себя все этапы производства: от сбора команды и подготовки материалов до контроля за всем процессом<br><br>
                 — вы получаете приток клиентов и повышение узнаваемости вашего бренда</div>
-            <div class="section-5__popup-button contact-button">Рассказать о проекте</div>
+            <div class="section-5__popup-button contact-button contact-button-popup">Рассказать о проекте</div>
             <div class="section-5__popup-close">&times;</div>
         </div>
       `;
@@ -121,7 +126,7 @@ const popupButtons = () => {
             <div class="section-5__popup-title">Youtube шоу, подкасты, интервью</div>
             <div class="section-5__popup-desc">Для прокачки личного бренды и охвата широкой аудитории предлагаем полноценное курирование данной услуги: мы подготовим креативную идею, сценарий, локации, образы, а также организуем весь продакшн от начала до конца.<br><br>
                 С вас — присутствие в кадре!</div>
-            <div class="section-5__popup-button contact-button">Рассказать о проекте</div>
+            <div class="section-5__popup-button contact-button contact-button-popup">Рассказать о проекте</div>
             <div class="section-5__popup-close">&times;</div>
         </div>
       `;
@@ -132,7 +137,7 @@ const popupButtons = () => {
             <img class="section-5__popup-img" src="./assets/img/service_2.png" alt="">
             <div class="section-5__popup-title">Обучающие видеоролики</div>
             <div class="section-5__popup-desc">Вы хотите запустить свой образовательный продукт? Поможем записать видео-лекции, мастер-классы и др. Сформируем вашу подачу, визуал и продемонстрируем вашу экспертность.</div>
-            <div class="section-5__popup-button contact-button">Рассказать о проекте</div>
+            <div class="section-5__popup-button contact-button contact-button-popup">Рассказать о проекте</div>
             <div class="section-5__popup-close">&times;</div>
         </div>
       `;
@@ -144,7 +149,7 @@ const popupButtons = () => {
             <div class="section-5__popup-title">Создание сниппетов и клипов</div>
             <div class="section-5__popup-desc">Професисональная команда занимается видео предпродакшеном и продакшеном клипов и сниппетов, весь процесс на нас от “камера мотор” до “снято”.<br><br>
                 Реализуем все ваши задумки!</div>
-            <div class="section-5__popup-button contact-button">Рассказать о проекте</div>
+            <div class="section-5__popup-button contact-button contact-button-popup">Рассказать о проекте</div>
             <div class="section-5__popup-close">&times;</div>
         </div>
       `;
@@ -160,7 +165,7 @@ const popupButtons = () => {
                 Написание сценариев<br><br>
                 — создание идеи под вашу цель от видео<br><br>
                 — создание сценариев</div>
-            <div class="section-5__popup-button contact-button">Рассказать о проекте</div>
+            <div class="section-5__popup-button contact-button contact-button-popup">Рассказать о проекте</div>
             <div class="section-5__popup-close">&times;</div>
         </div>
       `;
@@ -634,6 +639,11 @@ const headerBurger = () => {
           burgerMenu.style.display = "none";
           burgerMenu.classList.remove("active");
           tasks.scrollIntoView({ behavior: "smooth" });
+        });
+      }
+      if (index === 4) {
+        button.addEventListener("click", () => {
+          window.location.href = "./price.html";
         });
       }
     });
