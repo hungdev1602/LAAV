@@ -2049,24 +2049,35 @@ a {
   }
 
   .contact-popup__form--child {
-    height: 56px;
+    height: 59px;
     font-size: 15px;
   }
 
   .contact-popup__content h4 {
-    font-size: 40px;
+    font-size: 49px;
   }
 
   .contact-popup__subtitle span {
-    font-size: 40px;
+    font-size: 48px;
   }
 
   .contact-popup__line {
     width: 20%;
   }
 
+  .contact-popup__desc {
+    font-size: 12px;
+    width: 92%;
+  }
+
+  .contact-popup__confirm {
+    width: 88%;
+    font-size: 9px;
+  }
+
   .contact-popup__button {
-    font-size: 25px;
+    width: 83%;
+    font-size: 22px;
   }
 }
 
@@ -2130,7 +2141,7 @@ a {
 @media (max-width: 575.98px) {
   .contact-popup__box {
     padding: 90px 10px 10px 10px;
-    height: 300px;
+    height: 315px;
     top: -13%;
     border-radius: 4px;
   }
@@ -2224,10 +2235,11 @@ a {
   }
 
   .contact-popup__button-mobile {
+    width: 96%;
     position: absolute;
     bottom: 10px;
-    height: 20px;
-    font-size: 10px;
+    height: 30px;
+    font-size: 15px;
     padding: 0;
     border-radius: 4px;
     background: #000;
@@ -2253,10 +2265,11 @@ a {
   }
 
   .contact-popup__button-mobile1 {
+    width: 96%;
     position: absolute;
     bottom: 10px;
-    font-size: 10px;
-    height: 20px;
+    font-size: 15px;
+    height: 30px;
     padding: 0px;
     border-radius: 4px;
     background: #000;
