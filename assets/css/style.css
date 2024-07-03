@@ -2896,6 +2896,11 @@ a {
     padding-top: 0;
     margin-bottom: 20px;
   }
+
+  .section-9 .container {
+    margin-bottom: 20px;
+  }
+
   .section-9__wrap {
     height: 240px;
     padding-bottom: 0;
