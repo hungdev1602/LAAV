@@ -3360,6 +3360,10 @@ a {
   padding: 50px 0 90px;
 }
 
+.personal-policy {
+  margin-bottom: 40px;
+}
+
 .personal-policy__title {
   font-size: 60px;
   font-weight: 400;
@@ -3372,6 +3376,49 @@ a {
   font-weight: 400;
   font-family: var(--font-3);
 }
+
+@media (max-width: 991.98px) {
+  .personal-policy__title {
+    font-size: 40px;
+  }
+
+  .personal-policy__desc {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .header-policy {
+    padding: 30px 0 40px;
+  }
+  .header-policy img {
+    height: 30px;
+  }
+
+  .personal-policy__title {
+    font-size: 32px;
+  }
+
+  .personal-policy__desc {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .header-policy {
+    padding: 20px 0 20px;
+  }
+
+  .personal-policy__title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .personal-policy__desc {
+    font-size: 10px;
+  }
+}
+
 /* End  personal policy*/
 
 /* Price */
