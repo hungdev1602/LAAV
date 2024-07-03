@@ -1397,7 +1397,7 @@ a {
     margin-top: 5px;
     text-align: center;
     font-size: 6px;
-    padding: 0 8%;
+    padding: 0 22.5%;
   }
 
   .section-5__details {
@@ -1440,7 +1440,7 @@ a {
     margin-top: 5px;
     text-align: center;
     font-size: 6px;
-    padding: 0 8%;
+    padding: 0 20%;
   }
 
   .h3-first,
@@ -1451,15 +1451,20 @@ a {
   }
 
   .h3-second {
-    margin-bottom: 22px;
+    margin-bottom: 20px;
   }
 
-  .h3-seventh {
+  .h3-seventh,
+  .h3-sixth {
     margin-bottom: 16px;
   }
 
   .bottom-seventh {
     padding: 0 35%;
+  }
+
+  .h3-forth-mobile {
+    margin-bottom: 18px;
   }
 }
 /* popup */
