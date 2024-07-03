@@ -634,6 +634,7 @@ a {
   .section-2__contact {
     height: 20px;
     padding-left: 44%;
+    right: -1px;
   }
 
   .section-2__contact span {
